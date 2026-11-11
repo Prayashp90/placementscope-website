@@ -1,5 +1,5 @@
 {
-  "_schema": "Content file for PlacementScope. Any field set to null renders a styled 'Data needed' card and is listed automatically in TODO_CONTENT.md at build time. Eligibility degree tabs set to null render 'Not covered yet'. Never add facts that are not in the source guide.",
+  "_schema": "Content file for PlacementScope. Any field set to null renders a styled 'Data needed' card and is listed automatically in TODO_CONTENT.md at build time. Eligibility degree tabs set to null render 'Not covered yet'. Roadmap 'stage' must be an id from roadmapStages. Never add facts that are not in the source guide.",
 
   "site": {
     "title": "PlacementScope",
@@ -8,8 +8,9 @@
     "event": "Sahyog'26 · Students' Welfare Board × Academic Initiatives Club, IIT Guwahati",
     "edition": "November 2026",
     "hostelId": "2602",
-    "pdfPath": "/PlacementScope_Guide.pdf",
-    "disclaimer": "Everything here comes from individual senior experiences. Cutoffs, processes and pay change every year, so check the details with the placement cell before you rely on them."
+    "baseUrl": "https://placementscope.netlify.app",
+    "pdfPath": "PlacementScope_Guide.pdf",
+    "disclaimer": "Everything here comes from individual senior experiences. Cutoffs, processes and pay change every year, so confirm the details with the placement cell before relying on them."
   },
 
   "categories": [
@@ -21,25 +22,159 @@
   ],
 
   "roadmapStages": [
-    { "id": "y1-2", "label": "1st–2nd year", "order": 1 },
-    { "id": "summer-4", "label": "Summer after 4th semester", "order": 2 },
-    { "id": "sem-5", "label": "5th semester", "order": 3 },
-    { "id": "sem-6", "label": "6th semester", "order": 4 },
-    { "id": "july", "label": "July internship season", "order": 5 },
-    { "id": "summer-pre", "label": "Summer before placements", "order": 6 },
-    { "id": "nov", "label": "November: PPTs and online tests", "order": 7 },
-    { "id": "dec-1", "label": "1 December: placement drive", "order": 8 },
-    { "id": "ongoing", "label": "Throughout college", "order": 9 }
+    { "id": "y1-2", "label": "1st–2nd year" },
+    { "id": "summer-4", "label": "Summer after 4th semester" },
+    { "id": "sem-5", "label": "5th semester" },
+    { "id": "sem-6", "label": "By the 6th semester" },
+    { "id": "july", "label": "July: internship recruitment" },
+    { "id": "summer-pre", "label": "Summer before placements" },
+    { "id": "nov", "label": "November: PPTs and online tests" },
+    { "id": "dec-1", "label": "1 December: placement drive" },
+    { "id": "ongoing", "label": "Throughout college (no fixed date in the guide)" }
   ],
 
   "domains": [
     {
+      "id": "electrical-electronics",
+      "name": "Electrical & Electronics Core",
+      "category": "core",
+      "summary": "Analog, digital and signals fundamentals, project-driven interviews, and a research track for those drawn to R&D.",
+      "draftRef": "Draft §1, pp. 1–2",
+      "overview": {
+        "paragraphs": [
+          "This section covers two paths: core electronics placements on campus, and higher studies leading to research roles.",
+          "Technical rounds start with basic fundamentals and quickly move into specialised topics drawn from the projects on your resume."
+        ],
+        "keyPoints": [
+          "Standard Analog, Digital and Signals & Systems courses cover 90–95% of Texas Instruments' test and interview syllabus.",
+          "NVIDIA expects digital electronics well beyond the college course.",
+          "Projects, especially the BTP, steer most technical interviews."
+        ]
+      },
+      "tracks": [
+        {
+          "title": "Core placements",
+          "points": [
+            "Primarily open to EEE and ECE students; Texas Instruments also recruits EP and CSE students for embedded roles.",
+            "For non-circuital branches, on-campus eligibility is nearly zero. Build a strong CV through hands-on projects, join the Electronics Club, and apply off-campus.",
+            "Power electronics and other specialisations need self-study beyond college courses."
+          ]
+        },
+        {
+          "title": "Research scope",
+          "points": [
+            "Higher studies let you explore specialised domains and work on advanced research problems; industry roles build practical technical expertise.",
+            "After B.Tech or M.Tech, opportunities tend to be design-oriented and technical implementation roles.",
+            "PhD graduates can move into senior R&D positions: leading research teams and driving technological development.",
+            "Limitation: the research-track senior had not sat campus placements and had only recently started the PhD, so could not compare industry projects with doctoral research."
+          ]
+        }
+      ],
+      "timeline": [
+        { "stage": "Written test", "detail": "For Texas Instruments, standard Analog, Digital and Signals & Systems coursework covers 90–95% of the syllabus." },
+        { "stage": "Technical interview", "detail": "Starts with fundamentals, then converges on specialised topics based on your resume projects (especially the BTP)." }
+      ],
+      "interviewQuestions": null,
+      "eligibility": {
+        "general": [
+          "Branches: primarily EEE and ECE. Texas Instruments also takes EP and CSE students for embedded roles.",
+          "Non-circuital branches: on-campus eligibility is nearly zero; the route is projects, the Electronics Club and off-campus applications.",
+          "CPI cutoffs reported: Texas Instruments ≈ 7.5, NVIDIA ≈ 8.0, other core companies ≈ 7.0–7.5."
+        ],
+        "btech": ["Roles after B.Tech are generally design-oriented and technical implementation positions."],
+        "mtech": ["Roles after M.Tech are generally design-oriented and technical implementation positions."],
+        "phd": ["PhD graduates can enter senior R&D positions involving research into cutting-edge technologies, leading teams and driving innovation."]
+      },
+      "skills": [
+        { "name": "Analog electronics", "detail": "College coursework plus deeper study; covered heavily by TI." },
+        { "name": "Digital electronics", "detail": "Course level for TI; advanced mastery for NVIDIA." },
+        { "name": "Signals & Systems", "detail": "Part of the core set that covers most of TI's syllabus." },
+        { "name": "Power electronics & specialisations", "detail": "College content is often insufficient; supplement with specialised self-study." },
+        { "name": "Project depth", "detail": "Be prepared on every detail of your projects and BTP." }
+      ],
+      "certifications": null,
+      "roadmap": [
+        { "stage": "y1-2", "title": "Join the Electronics Club early", "actions": ["Join the EC Club early in college; the peer environment, club projects and senior guidance shape your technical roadmap."], "outcome": "A natural route into hands-on electronics work." },
+        { "stage": "ongoing", "title": "Master the core courses", "actions": ["Take Analog, Digital and Signals & Systems seriously; they cover 90–95% of TI's syllabus.", "Self-study power electronics and other specialisations beyond the course."], "outcome": "Fundamentals strong enough for written tests and the first interview minutes." },
+        { "stage": "ongoing", "title": "Go deeper in digital design for NVIDIA", "actions": ["Study digital electronics beyond the college course (e.g. Morris Mano, Anas Salah Eddin's playlist)."], "outcome": "Depth expected by NVIDIA." },
+        { "stage": "ongoing", "title": "Do projects you can defend", "actions": ["Take up formal professor projects.", "Know every detail of your BTP and other resume projects."], "outcome": "Interviews steered towards topics you know well." }
+      ],
+      "resources": [
+        { "title": "Analog Electronics (NPTEL) by Prof. Shanthi Pavan", "type": "Course", "use": "Analog electronics", "url": "https://nptel.ac.in" },
+        { "title": "Digital Design by Morris Mano", "type": "Book", "use": "Digital electronics", "url": null },
+        { "title": "Anas Salah Eddin YouTube playlist", "type": "Playlist", "use": "Digital electronics", "url": null },
+        { "title": "College coursework & professor projects", "type": "Coursework", "use": "Analog, Digital, Signals & Systems", "url": null }
+      ],
+      "practical": [
+        { "title": "Projects are mandatory", "detail": "Most technical interviews are steered by your projects, especially the BTP." },
+        { "title": "Electronics Club", "detail": "Join early; club projects and senior guidance shape your direction." },
+        { "title": "Professor projects", "detail": "Formal projects with professors are a recommended way to build analog depth." },
+        { "title": "Non-circuital students", "detail": "Hands-on projects and the EC Club are the way in, followed by off-campus applications." }
+      ],
+      "myths": [
+        { "myth": "A good internship will secure a core placement.", "reality": "Internships alone won't. Companies rarely give interns high-impact tasks worth noting; focus on core technical fundamentals." },
+        { "myth": "College courses are enough for every core company.", "reality": "They cover 90–95% for Texas Instruments, but NVIDIA wants deeper digital electronics and power electronics usually needs self-study." }
+      ],
+      "advice": [
+        { "quote": "Placement interviews carry a significant luck factor. Accept that early so you stay resilient and clear-headed for the next opportunity.", "attribution": { "role": "Senior, core electronics placements", "degree": null } },
+        { "quote": "One or two years of industry work before a Master's gives clarity on real workplace demands and helps you choose the right specialisation.", "attribution": { "role": "Senior, core electronics placements", "degree": null } },
+        { "quote": "Choose between placements and higher studies based on your own interests and long-term aspirations. If unexplored research areas excite you, consider higher studies.", "attribution": { "role": "Research scholar, Electrical & Electronics", "degree": "PhD (in progress)" } }
+      ],
+      "salaries": {
+        "roles": [
+          { "role": "Embedded roles", "detail": "Texas Instruments (open to EEE, ECE, EP, CSE)." },
+          { "role": "Design-oriented / technical implementation roles", "detail": "Typical for B.Tech and M.Tech graduates." },
+          { "role": "Senior R&D positions", "detail": "Open to PhD graduates; involve leading research teams." }
+        ],
+        "compensation": null,
+        "typicalRange": null
+      },
+      "companies": [
+        {
+          "name": "Texas Instruments",
+          "roles": ["Core electronics roles", "Embedded roles (EP and CSE also eligible)"],
+          "cutoff": "≈ 7.5",
+          "interviewFocus": ["Analog electronics", "Digital electronics", "Signals & Systems", "Resume projects"],
+          "iitgHistory": "Cited by the senior as a campus core recruiter. Year-wise history not recorded.",
+          "degreeConstraints": null,
+          "notes": "Standard undergraduate courses cover 90–95% of the written test and interview syllabus."
+        },
+        {
+          "name": "NVIDIA",
+          "roles": ["Core electronics roles"],
+          "cutoff": "≈ 8.0",
+          "interviewFocus": ["Advanced digital electronics", "Resume projects"],
+          "iitgHistory": "Cited by the senior as a campus core recruiter. Year-wise history not recorded.",
+          "degreeConstraints": null,
+          "notes": "Expects digital electronics mastery beyond standard college courses."
+        }
+      ],
+      "market": [
+        { "title": "AI in EDA tools", "detail": "AI integration has accelerated Electronic Design Automation workflows, improving productivity." },
+        { "title": "AI in hardware modelling", "detail": "AI-enabled simulation tools are improving hardware modelling and simulation." },
+        { "title": "Fundamentals over internships", "detail": "Internships alone won't secure placements; core fundamentals do." },
+        { "title": "Luck matters", "detail": "Interviews carry a real luck factor, so resilience matters." }
+      ],
+      "selfCheck": {
+        "derived": true,
+        "items": [
+          "I am confident in Analog, Digital and Signals & Systems at course level.",
+          "If targeting NVIDIA, I have studied digital electronics beyond the college course.",
+          "I can explain every design decision in my BTP and resume projects.",
+          "I know where my CPI stands against TI (≈ 7.5), NVIDIA (≈ 8.0) and other core companies (≈ 7.0–7.5).",
+          "I have joined the Electronics Club or done hands-on electronics projects.",
+          "If I'm from a non-circuital branch, I have an off-campus application plan.",
+          "I have decided between placements and higher studies based on my own interests."
+        ]
+      }
+    },
+
+    {
       "id": "civil-core",
       "name": "Civil Core",
       "category": "core",
-      "summary": "GATE-level fundamentals, form-driven shortlisting and a decisive HR round with a psychologist on the panel.",
+      "summary": "GATE-level fundamentals, form-driven shortlisting, and a decisive HR round with a psychologist on the panel.",
       "draftRef": "Draft §2, pp. 3–4",
-
       "overview": {
         "paragraphs": [
           "This section collects placement experience and practical guidance from recent seniors who went through Civil Engineering core campus recruitment.",
@@ -51,7 +186,6 @@
           "The HR round plays a decisive role in final selection."
         ]
       },
-
       "timeline": [
         { "stage": "Application (Forms A & B)", "detail": "Structured company CV forms submitted via Google Forms over a 7–10 day window." },
         { "stage": "Shortlisting", "detail": "Based on CPI and student category. Interview invitations arrive within 1–2 days." },
@@ -59,9 +193,16 @@
         { "stage": "Drive day: PPT & documents", "detail": "Early-morning pre-placement presentation, then mandatory document verification (Class 10 & 12 marksheets, category certificates)." },
         { "stage": "Technical interview", "detail": "15–30 minutes with a panel of 6–7 interviewers covering fundamentals and core sub-disciplines." },
         { "stage": "Form C (on the spot)", "detail": "Candidates who clear the technical round fill Form C immediately." },
-        { "stage": "HR interview", "detail": "30–40 minutes; typically a professional psychologist and two HR representatives. The process usually runs until about 3:00 PM." }
+        { "stage": "HR interview", "detail": "30–40 minutes, typically with a professional psychologist and two HR representatives. The day usually runs until about 3:00 PM." }
       ],
-
+      "interviewQuestions": [
+        { "q": "How many types of foundations are there?", "round": "Technical", "topic": "Geotechnical", "kind": "recalled" },
+        { "q": "What is the defining depth of a deep foundation?", "round": "Technical", "topic": "Geotechnical", "kind": "recalled" },
+        { "q": "What traffic facility do you use where multiple roads connect?", "a": "A roundabout.", "round": "Technical", "topic": "Transportation", "kind": "recalled" },
+        { "q": "Draw the complete stress–strain curve for steel.", "round": "Technical", "topic": "Strength of Materials", "kind": "recalled" },
+        { "q": "Draw the SFD, BMD and deflection curve for a given frame or beam.", "round": "Technical", "topic": "Structural Analysis", "kind": "recalled" },
+        { "q": "Form C: describe a major achievement, a time outside your comfort zone, or a key group project.", "round": "HR (written)", "topic": "Behavioural", "kind": "recalled" }
+      ],
       "eligibility": {
         "general": [
           "Shortlisting considers CPI and student category.",
@@ -71,57 +212,50 @@
         "mtech": null,
         "phd": null
       },
-
       "skills": [
         { "name": "Strength of Materials", "detail": "To GATE standard; stress–strain curves are asked directly." },
         { "name": "Structural Analysis", "detail": "SFD, BMD and deflection curves for beams and frames." },
         { "name": "Geotechnical Engineering", "detail": "Foundations: types and depth definitions." },
         { "name": "Transportation Engineering", "detail": "Traffic facilities and intersections." },
         { "name": "Steel Structures", "detail": "Part of the GATE-standard core set." },
-        { "name": "Structural dynamics & earthquake engineering", "detail": "Tested by design-consultancy recruiters." },
+        { "name": "Structural dynamics & earthquake engineering", "detail": "Tested by design consultancies." },
         { "name": "Composure and behavioural fit", "detail": "Panels look for confidence as well as conceptual accuracy." }
       ],
-
+      "certifications": null,
       "roadmap": [
         { "stage": "y1-2", "title": "Start a GATE / IES foundation", "actions": ["Begin preparing for IES, or at least GATE, from the first year."], "outcome": "An early base leaves room to handle placement stress alongside college life." },
         { "stage": "ongoing", "title": "Build core subjects to GATE standard", "actions": ["Cover Strength of Materials, Structural Analysis, Geotechnical, Transportation and Steel Structures.", "Practise 1-mark GATE-style questions for online tests."], "outcome": "Technical rounds and online tests mirror GATE/IES pattern and weightage." },
-        { "stage": "nov", "title": "Prepare your forms", "actions": ["Fill Forms A and B carefully during the 7–10 day window.", "Prepare people-management, leadership and crisis-resolution stories for Form C."], "outcome": "Every claim on your forms can survive situational follow-up questions." },
+        { "stage": "nov", "title": "Prepare your forms", "actions": ["Fill Forms A and B carefully during the 7–10 day window.", "Prepare people-management, leadership and crisis-resolution stories for Form C."], "outcome": "Every claim on your forms survives situational follow-up questions." },
         { "stage": "dec-1", "title": "Drive day", "actions": ["Carry Class 10 & 12 marksheets and category certificates.", "Stay calm through a long day that runs to about 3 PM."], "outcome": "Steady, confident answers across technical and HR panels." }
       ],
-
       "resources": null,
-
       "practical": [
         { "title": "Leadership and project stories", "detail": "Form C asks about a major achievement, a time outside your comfort zone, or a key group project. Panels check whether your stated leadership and co-curricular experience is genuine." }
       ],
-
       "myths": null,
-
       "advice": [
-        { "quote": "Prepare standard Civil subjects up to GATE standard; most technical rounds and online tests mirror GATE and IES.", "attribution": { "role": "Placed senior, Civil Core campus recruitment", "degree": null } },
-        { "quote": "Start preparing for IES, or at least GATE, early. It leaves you time to handle placement stress while still enjoying college.", "attribution": { "role": "Placed senior, Civil Core campus recruitment", "degree": null } },
-        { "quote": "Be ready to defend every point you write in Forms A, B and C.", "attribution": { "role": "Placed senior, Civil Core campus recruitment", "degree": null } },
-        { "quote": "In Form C, write about people management, leadership and crisis resolution, not technical jargon.", "attribution": { "role": "Placed senior, Civil Core campus recruitment", "degree": null } }
+        { "quote": "Prepare standard Civil subjects up to GATE standard; most technical rounds and online tests mirror GATE and IES.", "attribution": { "role": "Placed senior, Civil core campus recruitment", "degree": null } },
+        { "quote": "Start preparing for IES, or at least GATE, early. It leaves you time to handle placement stress while still enjoying college.", "attribution": { "role": "Placed senior, Civil core campus recruitment", "degree": null } },
+        { "quote": "Be ready to defend every point you write in Forms A, B and C.", "attribution": { "role": "Placed senior, Civil core campus recruitment", "degree": null } },
+        { "quote": "In Form C, write about people management, leadership and crisis resolution, not technical jargon.", "attribution": { "role": "Placed senior, Civil core campus recruitment", "degree": null } }
       ],
-
       "salaries": {
         "roles": [
           { "role": "Site Engineering / Management Trainee", "detail": "Site execution, supervisor coordination and project management on active construction projects." },
           { "role": "Trainee Design Engineer", "detail": "Structural design for national infrastructure (e.g. NTPC projects): beams, columns, slabs, proof checking and pre-bid technical assessments. About a 9-hour workday." }
         ],
         "compensation": [
-          { "company": "Company A (name not disclosed)", "figure": "CTC 20.1 LPA", "note": "Monthly in-hand figure in the draft was unreadable and has been held back for verification." }
+          { "company": "Company A (name not disclosed)", "figure": "CTC 20.1 LPA", "note": "Monthly in-hand figure held back pending verification." }
         ],
         "typicalRange": null
       },
-
       "companies": [
         {
           "name": "Company A (name not disclosed)",
           "roles": ["Site Engineering (Management Trainee)"],
           "cutoff": null,
           "interviewFocus": ["Basic geotechnical, transportation and structural concepts", "HR panel"],
-          "iitgHistory": "Recruited on campus during the interviewed senior's placement season.",
+          "iitgHistory": "Recruited on campus in the interviewed senior's placement season.",
           "degreeConstraints": null,
           "notes": "CTC 20.1 LPA."
         },
@@ -162,23 +296,350 @@
           "notes": "Specific details not listed in the source."
         }
       ],
-
       "market": [
-        { "title": "The HR round decides", "detail": "HR plays a decisive role in final selection, with a psychologist often on the panel." },
+        { "title": "The HR round decides", "detail": "HR plays a decisive role in final selection, often with a psychologist on the panel." },
         { "title": "Forms are cross-examined", "detail": "Panels run intense situational follow-ups to check leadership, project-management and co-curricular claims." }
       ],
+      "selfCheck": {
+        "derived": true,
+        "items": [
+          "I can solve 1-mark GATE questions in SOM, Structural Analysis, Geotechnical, Transportation and Steel.",
+          "I can draw SFD, BMD and deflection curves for standard beams and frames without notes.",
+          "I can draw the complete stress–strain curve for steel.",
+          "I can back every line of my Forms A and B with a concrete example.",
+          "I have 2–3 Form C stories on leadership, people management or crisis resolution, without technical jargon.",
+          "My Class 10 & 12 marksheets and category certificates are ready for verification."
+        ]
+      }
+    },
 
-      "interviewQuestions": [
-        { "q": "How many types of foundations are there?", "round": "Technical", "topic": "Geotechnical" },
-        { "q": "What is the defining depth of a deep foundation?", "round": "Technical", "topic": "Geotechnical" },
-        { "q": "What traffic facility do you use where multiple roads connect?", "a": "A roundabout.", "round": "Technical", "topic": "Transportation" },
-        { "q": "Draw the complete stress–strain curve for steel.", "round": "Technical", "topic": "Strength of Materials" },
-        { "q": "Draw the SFD, BMD and deflection curve for a given frame or beam.", "round": "Technical", "topic": "Structural Analysis" },
-        { "q": "Form C: describe a major achievement, a time outside your comfort zone, or a key group project.", "round": "HR (written)", "topic": "Behavioural" }
+    {
+      "id": "mechanical-core",
+      "name": "Mechanical Core",
+      "category": "core",
+      "summary": "Core companies want to hire more people than they do. CPI, sincere projects and clear technical delivery are what convert.",
+      "draftRef": "Draft §3, pp. 5–6",
+      "overview": {
+        "paragraphs": [
+          "This section compiles advice and placement strategy shared by Mechanical Engineering alumni, covering job availability, preparation milestones, software and project choice.",
+          "Getting shortlisted is only half the battle; presenting technical concepts clearly converts interview calls into offers."
+        ],
+        "keyPoints": [
+          "CPI and solid projects are the two primary factors for core Mechanical placements.",
+          "Fusion 360 is enough to start with CAD; ANSYS / Ansys Discovery for simulation.",
+          "An Inter-IIT podium is the \"cherry on the cake\"."
+        ]
+      },
+      "timeline": null,
+      "interviewQuestions": null,
+      "eligibility": {
+        "general": [
+          "Seniors name CPI and projects as the two deciding factors for core Mechanical shortlisting. No company-specific cutoffs were recorded."
+        ],
+        "btech": null,
+        "mtech": null,
+        "phd": null
+      },
+      "skills": [
+        { "name": "CAD: Fusion 360", "detail": "Essential and sufficient to start; needed for Kinematics and Design of Machine Elements (DOME). Other tools are easy once fluent." },
+        { "name": "FEA & simulation: ANSYS / Ansys Discovery", "detail": "Widely used in industrial design roles; licences can be requested through department professors." },
+        { "name": "Practical fabrication", "detail": "3D print at least a few physical models to understand real prototyping constraints." },
+        { "name": "Hardware + basic programming/controls", "detail": "Problem statements that combine fabrication with controls stand out." },
+        { "name": "Technical communication", "detail": "Explaining design decisions with full reasoning, linking theory to prototypes." }
       ],
+      "certifications": null,
+      "roadmap": [
+        { "stage": "summer-4", "title": "Research internship", "actions": ["Apply for research internships at IITs via programmes like SURGE or SPARK, or by cold-emailing professors (2nd-generation IITs are also good)."], "outcome": "Hands-on experience tied to courses studied up to the 4th semester." },
+        { "stage": "sem-5", "title": "Core internship", "actions": ["Target core-sector internships, on-campus or off-campus.", "If core industry isn't available, take a research internship."], "outcome": "Industry-relevant core exposure before the placement season." },
+        { "stage": "ongoing", "title": "Treat course projects seriously", "actions": ["Do core course projects sincerely rather than only studying for grades."], "outcome": "Academic projects form the core of resume screening." },
+        { "stage": "sem-6", "title": "Push your CPI", "actions": ["Focus on CPI improvement. If you are at 8+, aim for 8.5+."], "outcome": "A significant shortlisting advantage with top core recruiters." },
+        { "stage": "ongoing", "title": "Tools and prototypes", "actions": ["Become fluent in Fusion 360.", "Request ANSYS access through professors.", "3D print a few models using club resources."], "outcome": "Design and simulation skills beyond classroom teaching." },
+        { "stage": "ongoing", "title": "Clubs and Inter-IIT", "actions": ["Pick problem statements that combine hardware fabrication with basic programming/controls.", "Aim for Inter-IIT participation and a podium finish."], "outcome": "A strong edge in shortlisting and interviews." }
+      ],
+      "resources": [
+        { "title": "Fusion 360", "type": "Tool", "use": "CAD modelling baseline", "url": "https://www.autodesk.com/products/fusion-360" },
+        { "title": "ANSYS / Ansys Discovery", "type": "Tool", "use": "FEA and simulation (licence via professors)", "url": "https://www.ansys.com" },
+        { "title": "SURGE", "type": "Programme", "use": "Summer research internship at an IIT", "url": "https://surge.iitk.ac.in" },
+        { "title": "SPARK", "type": "Programme", "use": "Summer research internship at an IIT", "url": "https://spark.iitr.ac.in" }
+      ],
+      "practical": [
+        { "title": "Inter-IIT Tech Meet", "detail": "Participation is valuable; a podium finish gives a massive competitive edge." },
+        { "title": "Hardware + software problem statements", "detail": "For example, quadcopter stabilisation in the Aeromodelling Club." },
+        { "title": "3D printing via clubs", "detail": "Build physical models to learn real-world prototyping constraints." },
+        { "title": "MESA and branch initiatives", "detail": "Organise interaction sessions and podcasts with placed alumni through the Branch Representative and MESA." }
+      ],
+      "myths": [
+        { "myth": "Core Mechanical jobs are scarce.", "reality": "Core companies want to hire more people. Many applicants fail because they can't present their technical knowledge in interviews." },
+        { "myth": "If a company has several openings, several people will be hired.", "reality": "Companies have hired only one candidate despite multiple openings, purely because of poor technical delivery." },
+        { "myth": "Course projects only matter for grades.", "reality": "Academic projects form the core of resume screening for core roles." }
+      ],
+      "advice": [
+        { "quote": "At the end of the day, CPI and solid projects are what decide core Mechanical placement.", "attribution": { "role": "Alumni in core Mechanical roles", "degree": null } },
+        { "quote": "Explain design decisions, course projects and club work with full technical reasoning, not superficial summaries.", "attribution": { "role": "Alumni in core Mechanical roles", "degree": null } },
+        { "quote": "Connect DOME, Kinematics and FEA directly to prototypes or 3D-printed models you built.", "attribution": { "role": "Alumni in core Mechanical roles", "degree": null } },
+        { "quote": "Fusion 360 is enough to start. Once you're fluent, other industry tools are easy to pick up.", "attribution": { "role": "Alumni in core Mechanical roles", "degree": null } }
+      ],
+      "salaries": {
+        "roles": [
+          { "role": "Core design & simulation roles", "detail": "Alumni describe daily use of Ansys Discovery in industrial design work." }
+        ],
+        "compensation": null,
+        "typicalRange": null
+      },
+      "companies": null,
+      "market": [
+        { "title": "Delivery is the bottleneck", "detail": "Demand exists; poor technical presentation in interviews is what limits hiring." },
+        { "title": "Work experience", "detail": "Alumni describe core engineering as enriching and intellectually satisfying when it matches your interests." },
+        { "title": "Work culture", "detail": "Supportive, work-life balanced environments with sports tournaments, treks and team outings." }
+      ],
+      "selfCheck": {
+        "derived": true,
+        "items": [
+          "I can model parts comfortably in Fusion 360.",
+          "I have used, or requested access to, ANSYS / Ansys Discovery.",
+          "I have 3D printed at least a few physical models.",
+          "I did a research or core internship after the 4th or 5th semester.",
+          "I can explain every course and club project with full technical reasoning.",
+          "My CPI is on track (if 8+, aiming for 8.5+ by the 6th semester).",
+          "I have worked on a hardware + controls problem statement or Inter-IIT project."
+        ]
+      }
+    },
 
-      "selfCheck": null,
-      "certifications": null
+    {
+      "id": "civil-services",
+      "name": "Civil Services",
+      "category": "public",
+      "summary": "Choosing UPSC over placements: retention-heavy preparation, nearly two years of effort, and the value of PORs for the Personality Test.",
+      "draftRef": "Draft §4, pp. 7–8",
+      "overview": {
+        "paragraphs": [
+          "This section is based on a senior preparing for the UPSC Civil Services Examination, covering the preparation approach, how an engineering background helps, extracurricular involvement and advice for juniors.",
+          "For this senior, Civil Services was the primary goal from school onwards; IIT was chosen for exposure and a broad education rather than as a route to campus placements."
+        ],
+        "keyPoints": [
+          "UPSC rewards extensive retention more than JEE-style application.",
+          "Plan for close to two years of preparation from scratch.",
+          "PORs and clubs build examples useful in the Personality Test."
+        ]
+      },
+      "timeline": null,
+      "interviewQuestions": null,
+      "eligibility": { "general": null, "btech": null, "mtech": null, "phd": null },
+      "skills": [
+        { "name": "General Studies breadth and retention", "detail": "The exam needs extensive retention of information, with less emphasis on direct numerical application." },
+        { "name": "CSAT: mathematics, aptitude and reasoning", "detail": "An engineering background can reduce the extra preparation needed." },
+        { "name": "Optional subject", "detail": "Core engineering students may consider their own discipline as the optional." },
+        { "name": "Leadership and administration", "detail": "Examples from PORs can be relevant during the Personality Test." },
+        { "name": "Consistency and self-assessment", "detail": "Regular mock tests give a realistic view of your level." }
+      ],
+      "certifications": null,
+      "roadmap": [
+        { "stage": "y1-2", "title": "Understand before you prepare", "actions": ["Learn the exam structure, syllabus and requirements of each stage."], "outcome": "A realistic plan instead of guesswork." },
+        { "stage": "ongoing", "title": "Build NCERT foundations", "actions": ["Start with NCERT textbooks from Classes 6–12.", "Put in even a few dedicated hours every week during college."], "outcome": "A base that shortens full-time preparation later." },
+        { "stage": "ongoing", "title": "Take on responsibility", "actions": ["Be part of at least one club (welfare, technical, cultural or sports).", "Take a POR that gives administrative and leadership exposure."], "outcome": "Confidence, time management and real examples for the Personality Test." },
+        { "stage": "ongoing", "title": "Test yourself regularly", "actions": ["Attempt mock tests early to correct overconfidence."], "outcome": "An accurate sense of your preparation level." },
+        { "stage": "dec-1", "title": "Decide on placements", "actions": ["The senior skipped campus placements, seeing 1–2 years of work before preparation as an unnecessary delay. Make this choice deliberately."], "outcome": "A clear commitment either way." }
+      ],
+      "resources": [
+        { "title": "NCERT textbooks, Classes 6–12", "type": "Books", "use": "Foundation for General Studies", "url": "https://ncert.nic.in/textbook.php" },
+        { "title": "Mock tests", "type": "Practice", "use": "Self-assessment and calibration", "url": null }
+      ],
+      "practical": [
+        { "title": "Positions of responsibility", "detail": "The senior served as General Secretary of the Welfare Board; it built confidence, multitasking and exposure to administration and welfare work." },
+        { "title": "Clubs", "detail": "At least one club, technical or non-technical, for communication, teamwork and networking with seniors and juniors." }
+      ],
+      "myths": [
+        { "myth": "UPSC is like JEE: learn a few concepts and apply them.", "reality": "It requires extensive retention of information, with comparatively little direct numerical application." },
+        { "myth": "The full syllabus can be finished from scratch in 10–11 months.", "reality": "In practice, preparation took the senior nearly two years." },
+        { "myth": "Engineers can coast on their background.", "reality": "It helps with CSAT, but General Studies and the other components still need full preparation." }
+      ],
+      "advice": [
+        { "quote": "Begin by understanding the examination structure, syllabus and what each stage requires.", "attribution": { "role": "UPSC CSE aspirant; former General Secretary, Welfare Board", "degree": null } },
+        { "quote": "Start with NCERT textbooks from Classes 6 to 12.", "attribution": { "role": "UPSC CSE aspirant; former General Secretary, Welfare Board", "degree": null } },
+        { "quote": "Even a few dedicated hours every week during college can lay the foundation.", "attribution": { "role": "UPSC CSE aspirant; former General Secretary, Welfare Board", "degree": null } },
+        { "quote": "Be part of at least one club, whether welfare, technical, cultural or sports.", "attribution": { "role": "UPSC CSE aspirant; former General Secretary, Welfare Board", "degree": null } }
+      ],
+      "salaries": null,
+      "companies": null,
+      "companiesNote": "Civil Services is recruited through the UPSC examination, not campus companies. Services and cadre details are not covered in the current guide.",
+      "market": [
+        { "title": "Engineering background", "detail": "Useful for CSAT and quantitative areas, but General Studies still needs full preparation." },
+        { "title": "Mock tests reveal reality", "detail": "Regular testing corrected the senior's early overconfidence." }
+      ],
+      "selfCheck": {
+        "derived": true,
+        "items": [
+          "I have read the exam structure and syllabus for every stage.",
+          "I have started NCERT textbooks (Classes 6–12).",
+          "I set aside a few dedicated hours every week.",
+          "I have attempted at least one mock test.",
+          "I am part of at least one club or hold a POR.",
+          "I have consciously decided whether to sit for campus placements."
+        ]
+      }
+    },
+
+    {
+      "id": "data-science",
+      "name": "Data Science",
+      "category": "tech",
+      "summary": "Statistics, ML, SQL and DSA foundations; 2–3 deep end-to-end projects; and the ability to articulate every trade-off.",
+      "draftRef": "Draft §5, pp. 9–10",
+      "overview": {
+        "paragraphs": [
+          "This section aggregates preparation insights, project advice and interview strategy shared by a senior alumnus.",
+          "Most candidates who miss offers don't lack knowledge; they can't clearly articulate their model choices, metric selection and trade-offs."
+        ],
+        "keyPoints": [
+          "Foundations (Statistics, ML, DSA, SQL) matter more than superficial projects.",
+          "Recruiters prefer 2–3 well-understood end-to-end projects over many clones.",
+          "Expect every project assumption to be cross-examined."
+        ]
+      },
+      "timeline": [
+        { "stage": "Online assessment", "detail": "Typically a mix of DSA coding, complex SQL queries and MCQs on probability, statistics and ML algorithms." },
+        { "stage": "Technical interviews", "detail": "Deep-dive project probing plus live problem solving on the whiteboard." },
+        { "stage": "HR round", "detail": "Growth potential, collaboration and adaptability." }
+      ],
+      "interviewQuestions": [
+        { "q": "How did you handle missing data in your project?", "round": "Technical", "topic": "Project deep-dive", "kind": "typical" },
+        { "q": "How did you mitigate class imbalance?", "round": "Technical", "topic": "Project deep-dive", "kind": "typical" },
+        { "q": "Why F1-score rather than precision–recall (or vice versa) for your evaluation?", "round": "Technical", "topic": "Metrics", "kind": "typical" },
+        { "q": "Why XGBoost over a neural network (or a simpler baseline)?", "round": "Technical", "topic": "Model choice", "kind": "typical" },
+        { "q": "Explain Gradient Boosting or an attention mechanism to a non-technical stakeholder.", "round": "HR / behavioural", "topic": "Communication", "kind": "typical" },
+        { "q": "Describe a disagreement on technical approach in a team project and how you handled it.", "round": "HR / behavioural", "topic": "Teamwork", "kind": "typical" }
+      ],
+      "eligibility": { "general": null, "btech": null, "mtech": null, "phd": null },
+      "skills": [
+        { "name": "Machine Learning & Deep Learning", "detail": "Regression, trees, boosting, clustering; neural networks; NLP or CV basics depending on role." },
+        { "name": "Mathematics & Statistics", "detail": "Hypothesis testing, distributions, Bayes' theorem, linear algebra (PCA, SVD), A/B testing." },
+        { "name": "Data engineering & querying", "detail": "Advanced SQL (window functions, joins, aggregations), Pandas, NumPy, preprocessing pipelines." },
+        { "name": "Coding & problem solving", "detail": "Standard DSA in Python or C++ for coding screens." }
+      ],
+      "certifications": null,
+      "roadmap": [
+        { "stage": "ongoing", "when": "Phase 1: Foundations", "title": "Master the fundamentals", "actions": ["Probability, statistics, linear algebra, Python, SQL and core ML algorithms."], "outcome": "Theoretical rigour and coding proficiency for tests." },
+        { "stage": "ongoing", "when": "Phase 2: Projects", "title": "Build end-to-end projects", "actions": ["Work on real-world datasets (Kaggle, research or industry).", "Build complete pipelines: collection, cleaning, EDA, training, tuning, evaluation."], "outcome": "Evidence of deployment, feature engineering and evaluation depth." },
+        { "stage": "ongoing", "when": "Phase 3: Resume", "title": "Frame your resume", "actions": ["Write bullets around methodology, tools and quantified metrics."], "outcome": "A CV that survives automated screening and technical questioning." },
+        { "stage": "dec-1", "when": "Phase 4: Drive", "title": "Sharpen for the drive", "actions": ["Solve mock technical cases, revise ML trade-offs, practise live coding and SQL."], "outcome": "Speed, clarity and confidence in screening tests and technical rounds." }
+      ],
+      "resources": [
+        { "title": "Kaggle", "type": "Platform", "use": "Real-world datasets for projects", "url": "https://www.kaggle.com" }
+      ],
+      "practical": [
+        { "title": "End-to-end pipeline ownership", "detail": "Data collection and cleaning, EDA, model training, hyperparameter tuning and metric evaluation." },
+        { "title": "Problem statement clarity", "detail": "State the real-world use, and why your model beat simpler baselines." },
+        { "title": "Metrics-driven bullets", "detail": "e.g. \"Improved AUC-ROC from 0.78 to 0.89 using custom feature engineering and hyperparameter tuning.\"" },
+        { "title": "Keep learning visibly", "detail": "Follow recent papers, open-source tools and competitive data science platforms, and talk about them." }
+      ],
+      "myths": [
+        { "myth": "More projects make a stronger resume.", "reality": "2–3 well-understood end-to-end projects beat a long list of textbook clones." },
+        { "myth": "People miss offers because they don't know enough.", "reality": "Most fail because they can't articulate model choices, metrics and trade-offs." }
+      ],
+      "advice": [
+        { "quote": "A solid foundation in Statistics, ML, DSA and SQL is far more important than superficial projects.", "attribution": { "role": "Senior alumnus, Data Science", "degree": null } },
+        { "quote": "Practise walking the interviewer through your thinking out loud when designing a baseline or deriving a metric.", "attribution": { "role": "Senior alumnus, Data Science", "degree": null } },
+        { "quote": "Practise explaining complex models in simple terms, as if presenting to business stakeholders.", "attribution": { "role": "Senior alumnus, Data Science", "degree": null } }
+      ],
+      "salaries": null,
+      "companies": null,
+      "market": [
+        { "title": "Articulation decides", "detail": "Clear explanation of trade-offs separates offers from near-misses." },
+        { "title": "Breadth of OA", "detail": "Online tests blend DSA, SQL and probability/statistics/ML MCQs." }
+      ],
+      "selfCheck": {
+        "derived": true,
+        "items": [
+          "I can explain hypothesis testing, Bayes' theorem, PCA and A/B testing.",
+          "I can write SQL with window functions, joins and aggregations.",
+          "I can solve standard DSA problems in Python or C++.",
+          "I have 2–3 end-to-end projects I fully understand.",
+          "My resume bullets state methodology, tools and quantified results.",
+          "I can justify my model and metric choices against simpler baselines.",
+          "I can explain a complex model to a non-technical listener."
+        ]
+      }
+    },
+
+    {
+      "id": "quant",
+      "name": "Quantitative Finance",
+      "category": "finance",
+      "summary": "Among the most competitive paths: DSA and competitive programming, probability and puzzles, and some market sense.",
+      "draftRef": "Draft §6, pp. 11–12",
+      "overview": {
+        "paragraphs": [
+          "Quantitative finance and high-frequency trading (HFT) combine mathematics, probability, programming and financial concepts to build algorithms and systems used in markets.",
+          "They are among the most competitive career options for engineering students."
+        ],
+        "keyPoints": [
+          "Coding and mathematical aptitude carry equal weight.",
+          "Contests and mock tests are the best way to calibrate your level.",
+          "Research each company's requirements before you prepare."
+        ]
+      },
+      "timeline": [
+        { "stage": "Online assessment", "detail": "Coding and competitive programming problems, plus probability, mathematics and logical reasoning. Some companies also screen on branch and academic performance." },
+        { "stage": "Technical interviews", "detail": "Probability questions, mathematical puzzles, coding and algorithms, and basic finance depending on the company." },
+        { "stage": "Further rounds", "detail": "Problem-solving approach, mathematical reasoning, coding and handling unfamiliar problems." }
+      ],
+      "interviewQuestions": null,
+      "eligibility": {
+        "general": ["Some companies consider branch eligibility and academic performance at the online-assessment stage."],
+        "btech": null,
+        "mtech": null,
+        "phd": null
+      },
+      "skills": [
+        { "name": "Programming", "detail": "DSA, competitive programming and coding efficiency." },
+        { "name": "Mathematics", "detail": "Probability, random variables, expected values and mathematical reasoning." },
+        { "name": "Logical reasoning", "detail": "Puzzles, brainteasers and analytical problem solving." },
+        { "name": "Finance", "detail": "Basic understanding of markets, trading concepts and risk–return." }
+      ],
+      "certifications": null,
+      "roadmap": [
+        { "stage": "ongoing", "when": "Phase 1", "title": "Build fundamentals", "actions": ["Learn DSA.", "Strengthen mathematics and probability.", "Develop basic programming proficiency."], "outcome": "Base for both tracks of the OA." },
+        { "stage": "ongoing", "when": "Phase 2", "title": "Practise consistently", "actions": ["Solve problems on Codeforces and LeetCode.", "Practise probability puzzles and brainteasers.", "Take timed coding contests regularly."], "outcome": "Speed under time pressure." },
+        { "stage": "ongoing", "when": "Phase 3", "title": "Get practical exposure", "actions": ["Join technical clubs and coding communities.", "Compete in ICPC, IIPC, Codefest and Quantfest.", "Attempt mock assessments and discuss problems with peers."], "outcome": "Comfort with unfamiliar, hard problems." },
+        { "stage": "ongoing", "when": "Phase 4", "title": "Placement preparation", "actions": ["Identify target companies and their eligibility criteria.", "Practise company-specific OA questions.", "Revise probability, mathematics and basic finance."], "outcome": "Preparation targeted at real company tests." }
+      ],
+      "resources": [
+        { "title": "Codeforces", "type": "Platform", "use": "Competitive programming", "url": "https://codeforces.com" },
+        { "title": "LeetCode", "type": "Platform", "use": "DSA and coding practice", "url": "https://leetcode.com" },
+        { "title": "Green Book", "type": "Book", "use": "Probability and quant interview preparation", "url": null },
+        { "title": "Codefest / Quantfest", "type": "Competition", "use": "Technical competitions", "url": null },
+        { "title": "ICPC", "type": "Competition", "use": "Competitive programming contest", "url": "https://icpc.global" }
+      ],
+      "practical": [
+        { "title": "Quiz Club", "detail": "The alumnus credited it with building the ability to connect concepts across domains and solve unfamiliar problems." },
+        { "title": "Competitions", "detail": "ICPC, IIPC, Codefest and Quantfest give exposure to hard, time-bound problems." },
+        { "title": "Peer discussion", "detail": "Discussing problems with peers helps find weak areas." }
+      ],
+      "myths": null,
+      "advice": [
+        { "quote": "Start early and practise consistently.", "attribution": { "role": "Alumnus, Quant / HFT", "degree": null } },
+        { "quote": "Focus equally on coding and mathematical aptitude.", "attribution": { "role": "Alumnus, Quant / HFT", "degree": null } },
+        { "quote": "Research each company's requirements before preparing for its process.", "attribution": { "role": "Alumnus, Quant / HFT", "degree": null } }
+      ],
+      "salaries": null,
+      "companies": null,
+      "market": [
+        { "title": "Highly competitive", "detail": "Quant and HFT are among the most competitive opportunities for engineers." },
+        { "title": "Uncertain readiness", "detail": "A common challenge is not knowing whether your practice is enough. Use contests, mock tests, peer discussion and tracking of weak areas." }
+      ],
+      "selfCheck": {
+        "derived": true,
+        "items": [
+          "I practise on Codeforces or LeetCode consistently.",
+          "I take timed contests regularly.",
+          "I can solve expected-value and probability puzzles comfortably.",
+          "I have worked through a quant interview book such as the Green Book.",
+          "I understand basic markets, trading and risk–return.",
+          "I know the eligibility criteria of my target companies.",
+          "I have attempted company-specific mock OAs."
+        ]
+      }
     },
 
     {
@@ -187,7 +648,6 @@
       "category": "business",
       "summary": "CPI-gated online tests, guesstimates, product design and RCA, then a live case round on Day 1.",
       "draftRef": "Draft §7, pp. 13–14",
-
       "overview": {
         "paragraphs": [
           "This section is based on a recent senior's first-hand experience of Product Management campus recruitment.",
@@ -199,7 +659,6 @@
           "Communication and public speaking show confidence in front of panels."
         ]
       },
-
       "timeline": [
         { "stage": "Pre-placement talk", "when": "First week of November (7th semester)", "detail": "Eligibility verified; no resume shortlist, so access to the online test depends on the 7.5+ CPI cutoff." },
         { "stage": "Online assessment", "when": "About 10 days after the PPT", "detail": "Guesstimates, product design, RCA and case-study style problems." },
@@ -207,7 +666,11 @@
         { "stage": "Round 1 (offline)", "when": "Day 1 drive, 1 December", "detail": "Projects, past internships, guesstimates, product design and root-cause analysis. Only 20–30% advance." },
         { "stage": "Round 2 (online)", "when": "Day 1", "detail": "Deep project discussion plus a live business case study." }
       ],
-
+      "interviewQuestions": [
+        { "q": "Estimate the total number of two-wheelers used in your home city.", "round": "Round 1 (offline)", "topic": "Guesstimate", "kind": "recalled" },
+        { "q": "Walk through a resume project (an AI agentic-workflow project in the senior's case): design decisions, real-world utility and your individual contribution.", "round": "Round 2 (online)", "topic": "Resume deep-dive", "kind": "recalled" },
+        { "q": "Live business case study.", "round": "Round 2 (online)", "topic": "Case", "kind": "typical" }
+      ],
       "eligibility": {
         "general": [
           "CPI ≥ 7.5 to sit for the online assessment (Media.net).",
@@ -217,7 +680,6 @@
         "mtech": null,
         "phd": null
       },
-
       "skills": [
         { "name": "Guesstimates", "detail": "Structured logic, stated assumptions and sanity checks, communicated step by step." },
         { "name": "Product design", "detail": "Designing for user needs in scenario questions." },
@@ -226,7 +688,7 @@
         { "name": "Project depth", "detail": "Explain design decisions, real-world utility and your own contribution." },
         { "name": "Communication & public speaking", "detail": "Leading teams and presenting to audiences of up to 100 people builds visible confidence." }
       ],
-
+      "certifications": null,
       "roadmap": [
         { "stage": "y1-2", "title": "Join the right clubs early", "actions": ["Join and actively contribute to the Consulting and Analytics Club from the 1st year."], "outcome": "Foundations in product management, analytics and consulting frameworks." },
         { "stage": "ongoing", "title": "Build communication and leadership", "actions": ["Take roles where you guide teams and present to large audiences."], "outcome": "Visible confidence in front of panels." },
@@ -234,27 +696,22 @@
         { "stage": "nov", "title": "PPT and online assessment", "actions": ["Attend PPTs in the first week of November.", "Practise guesstimates, product design, RCA and case studies for the test about 10 days later.", "Research each company's business model."], "outcome": "A place on the Day 1 shortlist." },
         { "stage": "dec-1", "title": "Day 1 interviews", "actions": ["Know every project on your resume in depth, including design decisions and your own contribution.", "Think out loud with clear assumptions and sanity checks."], "outcome": "Clearing Round 1 (20–30% do) and the live case in Round 2." }
       ],
-
       "resources": null,
-
       "practical": [
         { "title": "Consulting and Analytics Club", "detail": "Active contribution from the 1st year builds product, analytics and consulting foundations." },
         { "title": "Projects that hold up to probing", "detail": "In one Round 2, the interviewer singled out a project on an AI agentic workflow and asked about design decisions, real-world use and individual contribution." },
         { "title": "Leadership and presenting", "detail": "Guiding teams and presenting to audiences of up to 100 people." }
       ],
-
       "myths": [
         { "myth": "A strong resume is what gets you into the product test.", "reality": "Some recruiters (e.g. Media.net) skip resume shortlisting entirely and admit candidates to the online test on a strict 7.5+ CPI cutoff." },
         { "myth": "Every PM role is classic consumer product management.", "reality": "Work varies by industry. At an ad-tech company like Media.net, it centres on advertising algorithms, platform mechanics and publisher tools." },
         { "myth": "Making the shortlist means you are nearly through.", "reality": "Over 50 candidates can be on the shortlist and waitlist, and only 20–30% of Round 1 candidates reach Round 2." }
       ],
-
       "advice": [
         { "quote": "Join the Consulting and Analytics Club from the 1st year and contribute actively.", "attribution": { "role": "Placed senior, Product Management campus recruitment", "degree": null } },
-        { "quote": "Research the company's business model beforehand so your expectations are realistic and you can talk to interviewers in their terms.", "attribution": { "role": "Placed senior, Product Management campus recruitment", "degree": null } },
+        { "quote": "Research the company's business model beforehand so your expectations are realistic and you can speak the interviewer's language.", "attribution": { "role": "Placed senior, Product Management campus recruitment", "degree": null } },
         { "quote": "In guesstimates, interviewers look at how you frame assumptions and sanity-check, not just the final number.", "attribution": { "role": "Placed senior, Product Management campus recruitment", "degree": null } }
       ],
-
       "salaries": {
         "roles": [
           { "role": "Associate Product Manager (APM)", "detail": "Media.net" },
@@ -270,12 +727,11 @@
         ],
         "typicalRange": "15–20 LPA across the four companies listed by the senior."
       },
-
       "companies": [
         {
           "name": "Media.net",
           "roles": ["Associate Product Manager", "Product Analyst", "Product Business Associate"],
-          "cutoff": "CPI ≥ 7.5",
+          "cutoff": "≥ 7.5",
           "interviewFocus": ["Online assessment", "Guesstimates", "Product design", "Root-cause analysis", "Case studies"],
           "iitgHistory": "Recruited on campus for product roles in the senior's season (Day 1).",
           "degreeConstraints": null,
@@ -309,25 +765,488 @@
           "notes": "15–20 LPA."
         }
       ],
-
       "market": [
         { "title": "Highly selective", "detail": "Only 20–30% of Round 1 candidates advance to Round 2." },
-        { "title": "Industry shapes the role", "detail": "Responsibilities differ significantly by the employer's sector, so research each company's business model first." }
+        { "title": "Industry shapes the role", "detail": "Responsibilities differ significantly by sector, so research each company's business model first." }
       ],
+      "selfCheck": {
+        "derived": true,
+        "items": [
+          "My CPI is 7.5 or above.",
+          "I can solve a guesstimate out loud with stated assumptions and a sanity check.",
+          "I can structure a root-cause analysis.",
+          "I can explain design decisions, real-world use and my own contribution for each project.",
+          "I have researched the business model of every company I'm applying to.",
+          "I have led a team or presented to a large audience."
+        ]
+      }
+    },
 
+    {
+      "id": "consulting",
+      "name": "Consulting",
+      "category": "business",
+      "summary": "A CV built on CPI, PORs and projects; then a guesstimate, a partner-led case and a final round, often in one day.",
+      "draftRef": "Draft §8, pp. 15–16",
+      "overview": {
+        "paragraphs": [
+          "Management consulting helps organisations solve business problems, improve performance and make strategic decisions.",
+          "It needs analytical thinking, structured problem solving, communication and business understanding. The alumnus stressed exploring different clubs in the first two years before committing to a path."
+        ],
+        "keyPoints": [
+          "8+ CGPA is a good position; 8–8.5 is competitive.",
+          "Core-team PORs signal leadership and ownership.",
+          "Start case preparation in the summer before placements."
+        ]
+      },
+      "timeline": [
+        { "stage": "Resume shortlisting", "detail": "Candidates submit consulting CVs; the company shortlists on profile." },
+        { "stage": "Preparation buddy", "detail": "Shortlisted students are paired with a company alumnus for about two weeks." },
+        { "stage": "Guesstimate round", "detail": "Estimation, logic and structured thinking. Usually run by a Principal or Project Leader." },
+        { "stage": "Case round", "detail": "Profitability, pricing, market expansion and other strategic problems. Usually run by a Partner." },
+        { "stage": "Final round", "detail": "Another case or an HR interview. The three rounds are often on the same day." }
+      ],
       "interviewQuestions": [
-        { "q": "Estimate the total number of two-wheelers used in your home city.", "round": "Round 1 (offline)", "topic": "Guesstimate" },
-        { "q": "Walk through a resume project (an AI agentic-workflow project in the senior's case): design decisions, real-world utility and your individual contribution.", "round": "Round 2 (online)", "topic": "Resume deep-dive" },
-        { "q": "Live business case study.", "round": "Round 2 (online)", "topic": "Case" }
+        { "q": "Guesstimate (including newer AI-related guesstimates).", "round": "Round 1", "topic": "Guesstimate", "kind": "typical" },
+        { "q": "Profitability case.", "round": "Round 2 (Partner)", "topic": "Case", "kind": "typical" },
+        { "q": "Pricing case.", "round": "Round 2 (Partner)", "topic": "Case", "kind": "typical" },
+        { "q": "Market-expansion case.", "round": "Round 2 (Partner)", "topic": "Case", "kind": "typical" }
       ],
+      "eligibility": {
+        "general": [
+          "8+ CGPA is considered a good position; 8–8.5 is a competitive range.",
+          "Department rank holders may receive preference."
+        ],
+        "btech": null,
+        "mtech": null,
+        "phd": null
+      },
+      "skills": [
+        { "name": "Structured problem solving", "detail": "Guesstimates and business cases." },
+        { "name": "Analytical thinking", "detail": "Working through client data to reach decisions." },
+        { "name": "Communication", "detail": "Client communication is 60–65% of a typical day." },
+        { "name": "Business understanding", "detail": "Profitability, pricing, market expansion." },
+        { "name": "Excel and PowerPoint", "detail": "Data analysis and presenting insights." }
+      ],
+      "certifications": null,
+      "roadmap": [
+        { "stage": "y1-2", "title": "Explore before you commit", "actions": ["Try different clubs and activities in the 1st and 2nd year to find your interests."], "outcome": "An informed career choice." },
+        { "stage": "ongoing", "title": "Build the CV", "actions": ["Keep CGPA preferably above 8.", "Take meaningful core-team PORs (Secretary, Organising Committee).", "Add internships, research, voluntary work or substantial projects (Inter-IIT-level projects can make up for limited internships)."], "outcome": "A profile that clears resume shortlisting." },
+        { "stage": "summer-pre", "title": "Start case preparation", "actions": ["Begin case interview preparation in the summer before placements.", "Work through IIM casebooks and the CNA guide.", "Use AI tools for mock cases and new guesstimates."], "outcome": "Fluency in guesstimates and cases." },
+        { "stage": "nov", "title": "Shortlist and buddy prep", "actions": ["Submit a consulting-specific CV.", "If shortlisted, use your ~2 weeks with the alumnus buddy well."], "outcome": "Ready for a three-round interview day." }
+      ],
+      "resources": [
+        { "title": "IIM Ahmedabad Casebook", "type": "Casebook", "use": "Case interview practice", "url": null },
+        { "title": "IIM Bangalore Casebook", "type": "Casebook", "use": "Consulting frameworks and cases", "url": null },
+        { "title": "IIM Calcutta Casebook", "type": "Casebook", "use": "Guesstimates and business cases", "url": null },
+        { "title": "CNA Consulting Guide", "type": "Guide", "use": "Compiled consulting cases", "url": null },
+        { "title": "AI tools (ChatGPT / Claude)", "type": "Tool", "use": "Mock interviews and practice questions", "url": null }
+      ],
+      "practical": [
+        { "title": "Suggested CV structure", "detail": "Education, Experience, Projects, Awards & Recognition, Extracurriculars. Leave out technical skills that aren't relevant to consulting." },
+        { "title": "Positions of responsibility", "detail": "Core-team roles such as Secretary and Organising Committee demonstrate leadership." },
+        { "title": "Internships, research and projects", "detail": "Relevant internships, research and voluntary work strengthen the profile; substantial projects can compensate for limited internships." }
+      ],
+      "myths": [
+        { "myth": "Without a big internship you can't get a consulting shortlist.", "reality": "Substantial projects, including Inter-IIT-level work, can compensate for limited internship experience." },
+        { "myth": "AI means you shouldn't bother with consulting.", "reality": "AI is reducing entry-level hiring and campus numbers may be lower, but the advice is to use AI as a preparation tool rather than worry about it." }
+      ],
+      "advice": [
+        { "quote": "Maintain a strong CGPA, preferably above 8.", "attribution": { "role": "Alumnus, management consulting", "degree": null } },
+        { "quote": "Prioritise meaningful PORs and leadership responsibilities.", "attribution": { "role": "Alumnus, management consulting", "degree": null } },
+        { "quote": "Start case interview preparation during the summer before placements.", "attribution": { "role": "Alumnus, management consulting", "degree": null } },
+        { "quote": "Client interaction is central: clients provide much of the data, context and direction you need.", "attribution": { "role": "Alumnus, management consulting", "degree": null } }
+      ],
+      "salaries": {
+        "roles": [
+          { "role": "Management consultant (entry level)", "detail": "Client communication 60–65% of the day, team discussions 25–30%, plus Excel analysis and PowerPoint presentations." }
+        ],
+        "compensation": null,
+        "typicalRange": null
+      },
+      "companies": null,
+      "market": [
+        { "title": "AI and entry-level hiring", "detail": "AI is affecting entry-level hiring; campus recruitment numbers may be lower than in previous years." },
+        { "title": "New case types", "detail": "AI-related guesstimates are increasingly common in interviews." },
+        { "title": "A day in consulting", "detail": "60–65% client communication, 25–30% team discussion, and Excel/PowerPoint work." }
+      ],
+      "selfCheck": {
+        "derived": true,
+        "items": [
+          "My CGPA is 8 or above (8–8.5 is competitive).",
+          "I hold at least one meaningful core-team POR.",
+          "My CV follows Education, Experience, Projects, Awards, Extracurriculars with no irrelevant technical skills.",
+          "I have worked through at least one IIM casebook.",
+          "I can solve a guesstimate and a profitability case in a structured way.",
+          "I have practised mock cases, including AI-related guesstimates.",
+          "I am comfortable with Excel analysis and PowerPoint storytelling."
+        ]
+      }
+    },
 
-      "selfCheck": null,
-      "certifications": null
+    {
+      "id": "ai-ml",
+      "name": "AI/ML",
+      "category": "tech",
+      "summary": "DSA first, then maths and ML depth; past interview questions and one standout strength make the profile.",
+      "draftRef": "Draft §9, pp. 17–18",
+      "overview": {
+        "paragraphs": [
+          "AI and ML recruitment needs strong mathematical foundations, programming skills, ML knowledge and practical problem solving.",
+          "You don't need to excel equally at everything: one particularly strong skill or achievement, presented well, can significantly strengthen your profile."
+        ],
+        "keyPoints": [
+          "DSA is the most common screening component.",
+          "Build maths and statistics early; last-minute preparation doesn't work.",
+          "Interview questions follow recurring patterns, so past sets are valuable."
+        ]
+      },
+      "timeline": [
+        { "stage": "Online assessment", "detail": "DSA is the most common screening component." },
+        { "stage": "Technical interviews", "detail": "DSA plus ML/DL fundamentals; questions often follow recurring patterns." }
+      ],
+      "interviewQuestions": null,
+      "eligibility": { "general": null, "btech": null, "mtech": null, "phd": null },
+      "skills": [
+        { "name": "Mathematics & statistics", "detail": "The foundations behind statistics, probability and deep learning." },
+        { "name": "DSA", "detail": "Frequently tested in online assessments and technical interviews." },
+        { "name": "ML & DL", "detail": "Fundamental algorithms, architectures, optimisation (SGD, Adam) and applications." },
+        { "name": "Problem solving", "detail": "Breaking complex problems into manageable parts and picking suitable approaches under real constraints." }
+      ],
+      "certifications": null,
+      "roadmap": [
+        { "stage": "ongoing", "when": "Phase 1", "title": "Prioritise DSA", "actions": ["Pick one platform (LeetCode, InterviewBit or Codeforces).", "Practise every day.", "Find weak areas and prioritise commonly tested topics."], "outcome": "Clearing the most common screen." },
+        { "stage": "ongoing", "when": "Phase 2", "title": "Strengthen domain knowledge", "actions": ["Build maths and statistics foundations.", "Study ML and DL fundamentals.", "Understand optimisers such as SGD and Adam.", "Aim for understanding over memorised implementations."], "outcome": "Depth for technical rounds." },
+        { "stage": "ongoing", "when": "Phase 3", "title": "Practise with past interviews", "actions": ["Collect previous interview questions and OA sets.", "Practise commonly repeated concepts.", "Use question banks from seniors and technical clubs."], "outcome": "Familiarity with recurring patterns." }
+      ],
+      "resources": [
+        { "title": "LeetCode", "type": "Platform", "use": "DSA and interview preparation", "url": "https://leetcode.com" },
+        { "title": "InterviewBit", "type": "Platform", "use": "DSA practice and interview questions", "url": "https://www.interviewbit.com" },
+        { "title": "Codeforces", "type": "Platform", "use": "Competitive programming", "url": "https://codeforces.com" },
+        { "title": "CNA / AI Club resources", "type": "Club", "use": "Previous interview questions and practice sets", "url": null },
+        { "title": "Mock interviews", "type": "Practice", "use": "Technical interview practice", "url": null }
+      ],
+      "practical": [
+        { "title": "Hackathons", "detail": "Valuable for the experience of working on hard problems, not just the CV." },
+        { "title": "Inter-IIT competitions", "detail": "Real problems under real constraints." },
+        { "title": "Internships and research", "detail": "Multiple ML/DL research projects or internships build a recognisable strength." },
+        { "title": "BTP and academic projects", "detail": "Meaningful domain-specific projects count." }
+      ],
+      "myths": [
+        { "myth": "You must be excellent at everything.", "reality": "One particularly strong area, presented well, can significantly strengthen your profile." },
+        { "myth": "Knowing many algorithms is enough.", "reality": "Practical experience teaches which approach suits actual constraints; that's what separates experienced problem solvers." }
+      ],
+      "advice": [
+        { "quote": "Start building mathematical and statistical fundamentals early.", "attribution": { "role": "Senior, AI/ML", "degree": null } },
+        { "quote": "Prioritise DSA; it's the common screening requirement.", "attribution": { "role": "Senior, AI/ML", "degree": null } },
+        { "quote": "Use previous interview experiences and mock OAs to find the important topics.", "attribution": { "role": "Senior, AI/ML", "degree": null } }
+      ],
+      "salaries": null,
+      "companies": null,
+      "market": [
+        { "title": "Rapidly evolving field", "detail": "AI/ML offers diverse opportunities, but screening still starts with DSA." },
+        { "title": "Patterns repeat", "detail": "Recruitment questions often follow recurring patterns." }
+      ],
+      "selfCheck": {
+        "derived": true,
+        "items": [
+          "I practise DSA every day on one platform.",
+          "I know my weak DSA topics and am working on them.",
+          "I understand the maths behind common ML/DL methods.",
+          "I can explain how SGD and Adam work.",
+          "I have collected previous interview questions and OA sets.",
+          "I have at least one standout strength (CP rank, research, major project or BTP).",
+          "I have taken part in a hackathon, Inter-IIT, internship or research project."
+        ]
+      }
+    },
+
+    {
+      "id": "trading",
+      "name": "Trading",
+      "category": "finance",
+      "summary": "A fast maths OA, a live group trading game, and an interview on risk appetite, from a senior placed at Axxela Advisory.",
+      "draftRef": "Draft §10, pp. 19–20",
+      "overview": {
+        "paragraphs": [
+          "Trading means buying and selling financial instruments to generate profit while managing market risk.",
+          "It needs quantitative aptitude, analytical thinking, financial knowledge, quick decisions and strong risk management. This section draws on a senior's experience with Axxela Advisory."
+        ],
+        "keyPoints": [
+          "Mental maths and speed matter at every stage.",
+          "A live trading simulation in groups of about 10; typically the top 2 advance.",
+          "Prioritise risk management over chasing profits."
+        ]
+      },
+      "timeline": [
+        { "stage": "Online assessment", "detail": "Speed, mathematical aptitude and reasoning: fast mental calculation, permutations & combinations, probability, logic." },
+        { "stage": "Group discussion & trading game", "detail": "Groups of about 10 trade against each other in a simulation (buy low/sell high or sell high/buy low). Typically the top two in each group advance." },
+        { "stage": "Personal interview", "detail": "Risk appetite, risk management, decision-making, mental maths, logical reasoning and basic market knowledge." }
+      ],
+      "interviewQuestions": [
+        { "q": "Fast mental-calculation problems.", "round": "Online assessment", "topic": "Mental maths", "kind": "typical" },
+        { "q": "Permutations, combinations and probability problems.", "round": "Online assessment", "topic": "Probability", "kind": "typical" },
+        { "q": "Questions probing your risk-taking ability and risk appetite.", "round": "Personal interview", "topic": "Risk", "kind": "typical" }
+      ],
+      "eligibility": { "general": null, "btech": null, "mtech": null, "phd": null },
+      "skills": [
+        { "name": "Quantitative aptitude", "detail": "Mental maths and quick calculation." },
+        { "name": "Financial knowledge", "detail": "Markets, derivatives, options and trading mechanisms." },
+        { "name": "Programming", "detail": "Python and algorithmic trading." },
+        { "name": "Risk management", "detail": "Assessing risk, managing losses and making calculated decisions." },
+        { "name": "Emotional discipline", "detail": "Composure during losses; avoiding impulsive decisions." },
+        { "name": "Practical experience", "detail": "Market analysis, strategy development and experimentation." }
+      ],
+      "certifications": null,
+      "roadmap": [
+        { "stage": "y1-2", "title": "Explore markets early", "actions": ["Explore finance and financial markets early, whatever your branch."], "outcome": "Real interest, which matters for long-term satisfaction." },
+        { "stage": "ongoing", "title": "Build quant speed", "actions": ["Practise mental maths and aptitude questions.", "Revise permutations, combinations and probability."], "outcome": "Speed for the OA and the trading game." },
+        { "stage": "ongoing", "title": "Learn instruments and code", "actions": ["Understand derivatives, options and market fundamentals.", "Learn Python and explore algorithmic trading."], "outcome": "Knowledge for the personal interview." },
+        { "stage": "ongoing", "title": "Practise with real feedback", "actions": ["Backtest and paper trade.", "Prioritise risk management over chasing profits."], "outcome": "Judgement under pressure." }
+      ],
+      "resources": [
+        { "title": "Trading and Exchanges by Larry Harris", "type": "Book", "use": "Market fundamentals", "url": null },
+        { "title": "Investopedia", "type": "Website", "use": "Financial concepts and terminology", "url": "https://www.investopedia.com" },
+        { "title": "Zerodha Varsity", "type": "Course", "use": "Beginner-friendly trading education", "url": "https://zerodha.com/varsity/" },
+        { "title": "Japanese candlestick charting", "type": "Topic", "use": "Technical analysis", "url": null },
+        { "title": "Python", "type": "Tool", "use": "Market analysis and algorithmic trading", "url": "https://www.python.org" }
+      ],
+      "practical": [
+        { "title": "Backtesting and paper trading", "detail": "Apply theory through market analysis and strategy experiments without real losses." },
+        { "title": "Algorithmic trading in Python", "detail": "Learn Python and explore algorithmic strategies." }
+      ],
+      "myths": [
+        { "myth": "Trading is about maximising profit.", "reality": "Losses are part of the job; seniors advise prioritising risk management over chasing profits." }
+      ],
+      "advice": [
+        { "quote": "Explore finance and financial markets early, irrespective of your engineering branch.", "attribution": { "role": "Alumnus, trading (Axxela Advisory)", "degree": null } },
+        { "quote": "Gain practical exposure through backtesting and paper trading, and prioritise risk management over chasing profits.", "attribution": { "role": "Alumnus, trading (Axxela Advisory)", "degree": null } },
+        { "quote": "Genuine interest in markets matters; the work can be demanding and stressful.", "attribution": { "role": "Alumnus, trading (Axxela Advisory)", "degree": null } }
+      ],
+      "salaries": {
+        "roles": [
+          { "role": "Trader", "detail": "Axxela Advisory: international markets (US, Brazil, China, Japan); hours roughly 3 PM to 1 AM." }
+        ],
+        "compensation": null,
+        "typicalRange": null
+      },
+      "companies": [
+        {
+          "name": "Axxela Advisory",
+          "roles": ["Trading"],
+          "cutoff": null,
+          "interviewFocus": ["Fast maths, P&C, probability, reasoning (OA)", "Group trading simulation", "Risk appetite and risk management (PI)", "Basic financial markets"],
+          "iitgHistory": "Placed the interviewed senior through campus placements.",
+          "degreeConstraints": null,
+          "notes": "Trades US, Brazil, China and Japan markets; hours about 3 PM–1 AM. Informal culture with minimal hierarchy, but demanding and high-pressure."
+        }
+      ],
+      "market": [
+        { "title": "Unconventional hours", "detail": "International market timings can mean working roughly 3 PM to 1 AM." },
+        { "title": "High pressure", "detail": "Profits and substantial losses both happen; performance pressure is high." },
+        { "title": "Flat culture", "detail": "Relatively informal, with minimal hierarchy." }
+      ],
+      "selfCheck": {
+        "derived": true,
+        "items": [
+          "I can do quick mental calculations under time pressure.",
+          "I am comfortable with permutations, combinations and probability.",
+          "I understand derivatives, options and market fundamentals.",
+          "I have written basic market-analysis code in Python.",
+          "I have backtested or paper traded a strategy.",
+          "I can explain my approach to risk management.",
+          "I am comfortable with unconventional working hours."
+        ]
+      }
+    },
+
+    {
+      "id": "sde",
+      "name": "SDE",
+      "category": "tech",
+      "summary": "DSA, CS fundamentals and system design, ideally done before July internships; graph-heavy live coding with debugging under pressure.",
+      "draftRef": "Draft §11, pp. 21–22",
+      "overview": {
+        "paragraphs": [
+          "SDE recruitment, for both internships and final placements, follows a structured multi-stage calendar.",
+          "Key benchmarks from campus drives show inclusivity across branches but zero tolerance for active backlogs."
+        ],
+        "keyPoints": [
+          "Start at the beginning of the 2nd year; finish DSA, CS fundamentals and system design before July internship recruitment.",
+          "Interviews test live coding, debugging and edge-case awareness, not memorised solutions.",
+          "Off-campus is possible but much harder."
+        ]
+      },
+      "timeline": [
+        { "stage": "Internship recruitment", "when": "July", "detail": "Aim to have DSA, CS fundamentals and system design done before this." },
+        { "stage": "PPTs and initial OAs", "when": "After mid-semester exams (4th year)", "detail": "Standard DSA (arrays, hash maps, heaps) plus harder graph and DP problems." },
+        { "stage": "Technical interviews", "when": "From midnight, 1 December", "detail": "Heavy on graph data structures and traversal; live coding, deliberate edge cases to test debugging." },
+        { "stage": "Hiring manager / HR", "when": "Drive", "detail": "System design alongside behavioural questions on stress, conflict and teamwork." }
+      ],
+      "interviewQuestions": [
+        { "q": "Graph data structure and traversal problems, coded live.", "round": "Technical", "topic": "Graphs", "kind": "typical" },
+        { "q": "Debug your own solution when the panel introduces deliberate edge cases.", "round": "Technical", "topic": "Debugging", "kind": "typical" },
+        { "q": "Discuss alternative approaches and corner cases for your solution.", "round": "Technical", "topic": "Problem solving", "kind": "typical" },
+        { "q": "System design question.", "round": "Hiring manager", "topic": "System design", "kind": "typical" },
+        { "q": "How do you handle stress, resolve conflicts and work in a team?", "round": "HR", "topic": "Behavioural", "kind": "typical" }
+      ],
+      "eligibility": {
+        "general": [
+          "Rippling (example drive): no minimum CGPA; judged on technical merit.",
+          "Active backlogs: strict disqualification.",
+          "Open to all branches, circuital and non-circuital.",
+          "Selection based on OA and technical interview performance."
+        ],
+        "btech": ["Eligible for the Rippling drive."],
+        "mtech": ["Excluded from the Rippling drive (B.Tech only)."],
+        "phd": ["Excluded from the Rippling drive (B.Tech only)."]
+      },
+      "skills": [
+        { "name": "DSA", "detail": "Arrays, hash maps, heaps, trees, graphs, dynamic programming." },
+        { "name": "CS fundamentals", "detail": "Operating Systems, DBMS, Computer Networks, OOP." },
+        { "name": "System design", "detail": "Principles and scalability fundamentals; critical for modern interviews." },
+        { "name": "Live coding", "detail": "Clean, functional code written live." },
+        { "name": "Debugging & edge cases", "detail": "Finding corner cases proactively and analysing alternatives." }
+      ],
+      "certifications": null,
+      "roadmap": [
+        { "stage": "y1-2", "when": "Start of 2nd year", "title": "Phase 1: DSA foundations (3–4 months)", "actions": ["Complete core DSA: arrays, maps, heaps, trees, graphs, DP.", "Solve problems consistently."], "outcome": "A base for OAs." },
+        { "stage": "y1-2", "when": "In parallel", "title": "Phase 2: CS fundamentals", "actions": ["Cover OS, DBMS, Computer Networks and OOP."], "outcome": "Ready for fundamentals questions." },
+        { "stage": "july", "when": "Before internship season", "title": "Phase 3: System design", "actions": ["Learn system design principles and scalability fundamentals.", "Wrap up DSA, CS fundamentals and system design before July."], "outcome": "Prepared for internship recruitment." },
+        { "stage": "nov", "title": "PPTs and OAs", "actions": ["Expect PPTs and OAs after mid-semester exams in 4th year.", "Revise graphs and DP for harder OA questions."], "outcome": "Clearing the OA." },
+        { "stage": "dec-1", "title": "Interviews from 1 December", "actions": ["Practise live coding, explaining edge cases and alternatives aloud.", "Prepare hackathon and team stories for HR."], "outcome": "Offers in the main interview phase." }
+      ],
+      "resources": [
+        { "title": "GitHub", "type": "Platform", "use": "Continuous project and open-source contributions", "url": "https://github.com" }
+      ],
+      "practical": [
+        { "title": "Hackathons & team projects", "detail": "Concrete HR discussion points: spotting problems, rapid prototyping, coordination and leadership under pressure." },
+        { "title": "Technical clubs & PORs", "detail": "Show communication, teamwork and non-technical responsibility." },
+        { "title": "GitHub activity", "detail": "Continuous contributions leave a strong impression: bonus \"cookie points\" on a CV." }
+      ],
+      "myths": [
+        { "myth": "SDE roles need a high CGPA.", "reality": "Rippling's drive had no CGPA cutoff and judged only technical merit, but active backlogs meant disqualification." },
+        { "myth": "Off-campus is an easy fallback with better pay.", "reality": "Off-campus pay is flexible and uncapped, but it's much harder: 5–6 month processes, tough referrals and few fresher openings." },
+        { "myth": "Memorised solutions are enough.", "reality": "Panels inject edge cases and ask for alternative approaches to test real understanding." },
+        { "myth": "Only circuital branches get SDE shortlists.", "reality": "The Rippling drive was open to all branches, circuital and non-circuital." }
+      ],
+      "advice": [
+        { "quote": "Begin dedicated preparation at the start of 2nd year and finish DSA, CS fundamentals and system design before July internship recruitment.", "attribution": { "role": "Senior, SDE campus recruitment", "degree": null } },
+        { "quote": "Identify corner cases yourself and discuss alternative approaches; don't rely on memorised solutions.", "attribution": { "role": "Senior, SDE campus recruitment", "degree": null } },
+        { "quote": "Hackathons give you real stories for HR rounds about solving problems under pressure as a team.", "attribution": { "role": "Senior, SDE campus recruitment", "degree": null } }
+      ],
+      "salaries": null,
+      "companies": [
+        {
+          "name": "Rippling",
+          "roles": ["Software Development Engineer"],
+          "cutoff": "No minimum CGPA",
+          "interviewFocus": ["OA: arrays, hash maps, heaps; graphs and DP", "Graph data structures and traversal", "Live coding and debugging", "System design (hiring manager)", "Stress, conflict and teamwork (HR)"],
+          "iitgHistory": "Cited by the senior as an example SDE campus drive.",
+          "degreeConstraints": "B.Tech only; M.Tech and PhD excluded. All branches eligible. Active backlogs disqualify.",
+          "notes": "Interview focus aligned with graph-based data models in its stack."
+        }
+      ],
+      "market": [
+        { "title": "Off-campus reality", "detail": "No salary caps, but 5–6 month timelines, tough referral requirements and limited fresher openings." },
+        { "title": "Branch-inclusive", "detail": "Drives such as Rippling's were open to every branch." },
+        { "title": "System design is expected", "detail": "Hiring-manager rounds frequently include it." }
+      ],
+      "selfCheck": {
+        "derived": true,
+        "items": [
+          "I have no active backlogs.",
+          "I have covered arrays, maps, heaps, trees, graphs and DP.",
+          "I can solve graph traversal problems live, writing clean code.",
+          "I have studied OS, DBMS, Computer Networks and OOP.",
+          "I know system design and scalability fundamentals.",
+          "I proactively test my own code with edge cases.",
+          "My GitHub shows continuous contributions.",
+          "I have a hackathon or team-project story ready for HR."
+        ]
+      }
     }
   ],
 
+  "quiz": {
+    "intro": "Four quick questions. This is a starting point based on the guide's content, not a verdict.",
+    "questions": [
+      {
+        "id": "work",
+        "text": "Which kind of work sounds most like you?",
+        "options": [
+          { "label": "Circuits, chips and electronic hardware", "scores": { "electrical-electronics": 3, "mechanical-core": 1 } },
+          { "label": "Structures, machines and physical design", "scores": { "civil-core": 3, "mechanical-core": 3 } },
+          { "label": "Building software and solving coding problems", "scores": { "sde": 3, "ai-ml": 2, "data-science": 1, "quant": 1 } },
+          { "label": "Data, statistics and ML models", "scores": { "data-science": 3, "ai-ml": 3 } },
+          { "label": "Puzzles, probability and markets", "scores": { "quant": 3, "trading": 3 } },
+          { "label": "Business and user problems", "scores": { "product-management": 3, "consulting": 3 } },
+          { "label": "Public service, policy and administration", "scores": { "civil-services": 4 } }
+        ]
+      },
+      {
+        "id": "practice",
+        "text": "What would you happily practise every week?",
+        "options": [
+          { "label": "GATE-style core subject problems", "scores": { "civil-core": 2, "mechanical-core": 2, "electrical-electronics": 2 } },
+          { "label": "DSA and competitive programming", "scores": { "sde": 3, "quant": 2, "ai-ml": 2 } },
+          { "label": "Probability puzzles and mental maths", "scores": { "quant": 3, "trading": 3 } },
+          { "label": "ML projects on real datasets", "scores": { "data-science": 3, "ai-ml": 2 } },
+          { "label": "Guesstimates, cases and presenting", "scores": { "consulting": 3, "product-management": 3 } },
+          { "label": "Reading widely and retaining a lot", "scores": { "civil-services": 3 } }
+        ]
+      },
+      {
+        "id": "branch",
+        "text": "What is your branch?",
+        "options": [
+          { "label": "EEE / ECE / EP", "scores": { "electrical-electronics": 2 }, "note": "Texas Instruments also recruits EP and CSE students for embedded roles." },
+          { "label": "Civil", "scores": { "civil-core": 2 } },
+          { "label": "Mechanical", "scores": { "mechanical-core": 2 } },
+          { "label": "CSE / MnC", "scores": { "sde": 1, "ai-ml": 1, "data-science": 1, "quant": 1 } },
+          { "label": "Another branch", "scores": {}, "note": "Electronics core on-campus eligibility is nearly zero for non-circuital branches, but the Rippling SDE drive was open to all branches, and trading seniors advise exploring markets whatever your branch." }
+        ]
+      },
+      {
+        "id": "cpi",
+        "text": "Roughly where is your CPI?",
+        "options": [
+          { "label": "8.0 or above", "scores": { "consulting": 1 }, "note": "You clear every cutoff recorded in this guide (TI ≈ 7.5, Media.net 7.5, NVIDIA ≈ 8.0). Consulting sees 8–8.5 as competitive." },
+          { "label": "7.5 – 8.0", "scores": {}, "note": "You clear TI (≈ 7.5) and Media.net (7.5). NVIDIA is ≈ 8.0 and consulting prefers 8+." },
+          { "label": "Below 7.5", "scores": { "sde": 1 }, "note": "Media.net and TI cutoffs recorded here are about 7.5. Rippling's SDE drive had no CGPA cutoff but disqualified active backlogs. Mechanical seniors advise pushing CPI up by the 6th semester." }
+        ]
+      }
+    ]
+  },
+
   "alumni": [
-    { "domain": "civil-core", "degree": null, "graduationYear": null, "contact": "Provided in PDF annexure", "proofNote": null },
-    { "domain": "product-management", "degree": null, "graduationYear": null, "contact": "Provided in PDF annexure", "proofNote": null }
+    { "domain": "electrical-electronics", "role": "Senior, core electronics placements", "degree": null, "graduationYear": null, "contact": "Provided in PDF annexure", "proofNote": null },
+    { "domain": "electrical-electronics", "role": "Research scholar (recently started PhD)", "degree": "PhD (in progress)", "graduationYear": null, "contact": "Provided in PDF annexure", "proofNote": null },
+    { "domain": "civil-core", "role": "Placed senior, Civil core", "degree": null, "graduationYear": null, "contact": "Provided in PDF annexure", "proofNote": null },
+    { "domain": "mechanical-core", "role": "Alumni in core Mechanical design roles", "degree": null, "graduationYear": null, "contact": "Provided in PDF annexure", "proofNote": null },
+    { "domain": "civil-services", "role": "UPSC CSE aspirant", "degree": null, "graduationYear": null, "contact": "Provided in PDF annexure", "proofNote": null },
+    { "domain": "data-science", "role": "Senior alumnus, Data Science", "degree": null, "graduationYear": null, "contact": "Provided in PDF annexure", "proofNote": null },
+    { "domain": "quant", "role": "Alumnus, Quant / HFT", "degree": null, "graduationYear": null, "contact": "Provided in PDF annexure", "proofNote": null },
+    { "domain": "product-management", "role": "Placed senior, Product Management", "degree": null, "graduationYear": null, "contact": "Provided in PDF annexure", "proofNote": null },
+    { "domain": "consulting", "role": "Alumnus, management consulting", "degree": null, "graduationYear": null, "contact": "Provided in PDF annexure", "proofNote": null },
+    { "domain": "ai-ml", "role": "Senior, AI/ML", "degree": null, "graduationYear": null, "contact": "Provided in PDF annexure", "proofNote": null },
+    { "domain": "trading", "role": "Alumnus, trading (Axxela Advisory)", "degree": null, "graduationYear": null, "contact": "Provided in PDF annexure", "proofNote": null },
+    { "domain": "sde", "role": "Senior, SDE campus recruitment", "degree": null, "graduationYear": null, "contact": "Provided in PDF annexure", "proofNote": null }
+  ],
+
+  "contentGaps": [
+    "Add the final guide PDF at public/PlacementScope_Guide.pdf (the Download button already points there).",
+    "Confirm the live site URL and update site.baseUrl (used for canonical links, Open Graph and sitemap.xml).",
+    "Civil Core: the monthly in-hand figure in the draft's compensation table is garbled (\"≈ 90–1k/mo\"). Verify with the senior and add it to salaries.compensation.",
+    "Civil Core: confirm that CTC 20.1 LPA belongs to Company A (the draft's table layout is ambiguous), and whether Company A can be named.",
+    "Mechanical Core: the draft ends with 'Learning Pathways' bullets that look copied from SDE and were removed from the site: Technical depth (distributed systems, machine learning, specialised security); Breadth (new programming languages and frameworks); Soft skills (communication, leadership, emotional intelligence, business acumen); Specialisation (cloud platforms, Kubernetes, security, performance optimisation). Confirm with the SDE senior before reusing them.",
+    "Degree and graduation year for every interviewed senior (alumni annexure and advice attributions).",
+    "Proof-of-conversation notes for each senior (alumni[].proofNote).",
+    "The problem statement asks for at least one alumnus per degree level (B.Tech, M.Tech, PhD) where a domain differs by degree. Only Electrical & Electronics has a PhD voice; no M.Tech voices exist yet.",
+    "Historical IITG hiring patterns (year-wise visits, offers) for every company.",
+    "Recruitment dates and timelines for Electrical & Electronics, Mechanical, Data Science, Quant, AI/ML and Trading.",
+    "Self-check lists are derived from each domain's senior advice. Ask seniors to review them.",
+    "Exact URLs for: the Anas Salah Eddin playlist, Prof. Shanthi Pavan's NPTEL course page, IIM casebooks, the CNA Consulting Guide, and Codefest/Quantfest.",
+    "Chemical Core is not covered (11 of 12 domains)."
   ]
 }
