@@ -1,0 +1,333 @@
+{
+  "_schema": "Content file for PlacementScope. Any field set to null renders a styled 'Data needed' card and is listed automatically in TODO_CONTENT.md at build time. Eligibility degree tabs set to null render 'Not covered yet'. Never add facts that are not in the source guide.",
+
+  "site": {
+    "title": "PlacementScope",
+    "tagline": "Documenting the Success",
+    "purpose": "Placements at IIT Guwahati run on rumours, forwards and half-true stories. This guide is built from real interviews with seniors who were placed or went on to further studies.",
+    "event": "Sahyog'26 · Students' Welfare Board × Academic Initiatives Club, IIT Guwahati",
+    "edition": "November 2026",
+    "hostelId": "2602",
+    "pdfPath": "/PlacementScope_Guide.pdf",
+    "disclaimer": "Everything here comes from individual senior experiences. Cutoffs, processes and pay change every year, so check the details with the placement cell before you rely on them."
+  },
+
+  "categories": [
+    { "id": "core", "label": "Core Engineering" },
+    { "id": "tech", "label": "Tech" },
+    { "id": "finance", "label": "Finance" },
+    { "id": "business", "label": "Business" },
+    { "id": "public", "label": "Public Service" }
+  ],
+
+  "roadmapStages": [
+    { "id": "y1-2", "label": "1st–2nd year", "order": 1 },
+    { "id": "summer-4", "label": "Summer after 4th semester", "order": 2 },
+    { "id": "sem-5", "label": "5th semester", "order": 3 },
+    { "id": "sem-6", "label": "6th semester", "order": 4 },
+    { "id": "july", "label": "July internship season", "order": 5 },
+    { "id": "summer-pre", "label": "Summer before placements", "order": 6 },
+    { "id": "nov", "label": "November: PPTs and online tests", "order": 7 },
+    { "id": "dec-1", "label": "1 December: placement drive", "order": 8 },
+    { "id": "ongoing", "label": "Throughout college", "order": 9 }
+  ],
+
+  "domains": [
+    {
+      "id": "civil-core",
+      "name": "Civil Core",
+      "category": "core",
+      "summary": "GATE-level fundamentals, form-driven shortlisting and a decisive HR round with a psychologist on the panel.",
+      "draftRef": "Draft §2, pp. 3–4",
+
+      "overview": {
+        "paragraphs": [
+          "This section collects placement experience and practical guidance from recent seniors who went through Civil Engineering core campus recruitment.",
+          "Core technical rounds and online screening tests closely follow the pattern and weightage of GATE and IES (Engineering Services Examination), so GATE-level preparation is the benchmark."
+        ],
+        "keyPoints": [
+          "Prepare core subjects to GATE standard.",
+          "Be ready to defend every line of Forms A, B and C.",
+          "The HR round plays a decisive role in final selection."
+        ]
+      },
+
+      "timeline": [
+        { "stage": "Application (Forms A & B)", "detail": "Structured company CV forms submitted via Google Forms over a 7–10 day window." },
+        { "stage": "Shortlisting", "detail": "Based on CPI and student category. Interview invitations arrive within 1–2 days." },
+        { "stage": "Online technical test", "detail": "Some companies (e.g. Spectrum Techno Consultant) run an online test open to most shortlisted candidates (14 of 17 in one case). Questions resemble 1-mark GATE questions." },
+        { "stage": "Drive day: PPT & documents", "detail": "Early-morning pre-placement presentation, then mandatory document verification (Class 10 & 12 marksheets, category certificates)." },
+        { "stage": "Technical interview", "detail": "15–30 minutes with a panel of 6–7 interviewers covering fundamentals and core sub-disciplines." },
+        { "stage": "Form C (on the spot)", "detail": "Candidates who clear the technical round fill Form C immediately." },
+        { "stage": "HR interview", "detail": "30–40 minutes; typically a professional psychologist and two HR representatives. The process usually runs until about 3:00 PM." }
+      ],
+
+      "eligibility": {
+        "general": [
+          "Shortlisting considers CPI and student category.",
+          "Category certificates and Class 10 & 12 marksheets are verified on drive day."
+        ],
+        "btech": null,
+        "mtech": null,
+        "phd": null
+      },
+
+      "skills": [
+        { "name": "Strength of Materials", "detail": "To GATE standard; stress–strain curves are asked directly." },
+        { "name": "Structural Analysis", "detail": "SFD, BMD and deflection curves for beams and frames." },
+        { "name": "Geotechnical Engineering", "detail": "Foundations: types and depth definitions." },
+        { "name": "Transportation Engineering", "detail": "Traffic facilities and intersections." },
+        { "name": "Steel Structures", "detail": "Part of the GATE-standard core set." },
+        { "name": "Structural dynamics & earthquake engineering", "detail": "Tested by design-consultancy recruiters." },
+        { "name": "Composure and behavioural fit", "detail": "Panels look for confidence as well as conceptual accuracy." }
+      ],
+
+      "roadmap": [
+        { "stage": "y1-2", "title": "Start a GATE / IES foundation", "actions": ["Begin preparing for IES, or at least GATE, from the first year."], "outcome": "An early base leaves room to handle placement stress alongside college life." },
+        { "stage": "ongoing", "title": "Build core subjects to GATE standard", "actions": ["Cover Strength of Materials, Structural Analysis, Geotechnical, Transportation and Steel Structures.", "Practise 1-mark GATE-style questions for online tests."], "outcome": "Technical rounds and online tests mirror GATE/IES pattern and weightage." },
+        { "stage": "nov", "title": "Prepare your forms", "actions": ["Fill Forms A and B carefully during the 7–10 day window.", "Prepare people-management, leadership and crisis-resolution stories for Form C."], "outcome": "Every claim on your forms can survive situational follow-up questions." },
+        { "stage": "dec-1", "title": "Drive day", "actions": ["Carry Class 10 & 12 marksheets and category certificates.", "Stay calm through a long day that runs to about 3 PM."], "outcome": "Steady, confident answers across technical and HR panels." }
+      ],
+
+      "resources": null,
+
+      "practical": [
+        { "title": "Leadership and project stories", "detail": "Form C asks about a major achievement, a time outside your comfort zone, or a key group project. Panels check whether your stated leadership and co-curricular experience is genuine." }
+      ],
+
+      "myths": null,
+
+      "advice": [
+        { "quote": "Prepare standard Civil subjects up to GATE standard; most technical rounds and online tests mirror GATE and IES.", "attribution": { "role": "Placed senior, Civil Core campus recruitment", "degree": null } },
+        { "quote": "Start preparing for IES, or at least GATE, early. It leaves you time to handle placement stress while still enjoying college.", "attribution": { "role": "Placed senior, Civil Core campus recruitment", "degree": null } },
+        { "quote": "Be ready to defend every point you write in Forms A, B and C.", "attribution": { "role": "Placed senior, Civil Core campus recruitment", "degree": null } },
+        { "quote": "In Form C, write about people management, leadership and crisis resolution, not technical jargon.", "attribution": { "role": "Placed senior, Civil Core campus recruitment", "degree": null } }
+      ],
+
+      "salaries": {
+        "roles": [
+          { "role": "Site Engineering / Management Trainee", "detail": "Site execution, supervisor coordination and project management on active construction projects." },
+          { "role": "Trainee Design Engineer", "detail": "Structural design for national infrastructure (e.g. NTPC projects): beams, columns, slabs, proof checking and pre-bid technical assessments. About a 9-hour workday." }
+        ],
+        "compensation": [
+          { "company": "Company A (name not disclosed)", "figure": "CTC 20.1 LPA", "note": "Monthly in-hand figure in the draft was unreadable and has been held back for verification." }
+        ],
+        "typicalRange": null
+      },
+
+      "companies": [
+        {
+          "name": "Company A (name not disclosed)",
+          "roles": ["Site Engineering (Management Trainee)"],
+          "cutoff": null,
+          "interviewFocus": ["Basic geotechnical, transportation and structural concepts", "HR panel"],
+          "iitgHistory": "Recruited on campus during the interviewed senior's placement season.",
+          "degreeConstraints": null,
+          "notes": "CTC 20.1 LPA."
+        },
+        {
+          "name": "Spectrum Techno Consultant",
+          "roles": ["Trainee Design Engineer"],
+          "cutoff": null,
+          "interviewFocus": ["Beam/frame shear, bending and deflection", "Structural dynamics", "Earthquake engineering", "Online test with 1-mark GATE-style questions"],
+          "iitgHistory": "Recruited on campus; 14 of 17 shortlisted candidates took its online test in the senior's season.",
+          "degreeConstraints": null,
+          "notes": "Work on NTPC projects; about a 9-hour workday."
+        },
+        {
+          "name": "Reliance",
+          "roles": ["Core engineering roles"],
+          "cutoff": null,
+          "interviewFocus": null,
+          "iitgHistory": "Visited for core hiring during the placement drive.",
+          "degreeConstraints": null,
+          "notes": "Specific details not listed in the source."
+        },
+        {
+          "name": "L&T",
+          "roles": ["Core engineering roles"],
+          "cutoff": null,
+          "interviewFocus": null,
+          "iitgHistory": "Visited for core hiring during the placement drive.",
+          "degreeConstraints": null,
+          "notes": "Specific details not listed in the source."
+        },
+        {
+          "name": "Godrej",
+          "roles": ["Core engineering roles"],
+          "cutoff": null,
+          "interviewFocus": null,
+          "iitgHistory": "Visited for core hiring during the placement drive.",
+          "degreeConstraints": null,
+          "notes": "Specific details not listed in the source."
+        }
+      ],
+
+      "market": [
+        { "title": "The HR round decides", "detail": "HR plays a decisive role in final selection, with a psychologist often on the panel." },
+        { "title": "Forms are cross-examined", "detail": "Panels run intense situational follow-ups to check leadership, project-management and co-curricular claims." }
+      ],
+
+      "interviewQuestions": [
+        { "q": "How many types of foundations are there?", "round": "Technical", "topic": "Geotechnical" },
+        { "q": "What is the defining depth of a deep foundation?", "round": "Technical", "topic": "Geotechnical" },
+        { "q": "What traffic facility do you use where multiple roads connect?", "a": "A roundabout.", "round": "Technical", "topic": "Transportation" },
+        { "q": "Draw the complete stress–strain curve for steel.", "round": "Technical", "topic": "Strength of Materials" },
+        { "q": "Draw the SFD, BMD and deflection curve for a given frame or beam.", "round": "Technical", "topic": "Structural Analysis" },
+        { "q": "Form C: describe a major achievement, a time outside your comfort zone, or a key group project.", "round": "HR (written)", "topic": "Behavioural" }
+      ],
+
+      "selfCheck": null,
+      "certifications": null
+    },
+
+    {
+      "id": "product-management",
+      "name": "Product Management",
+      "category": "business",
+      "summary": "CPI-gated online tests, guesstimates, product design and RCA, then a live case round on Day 1.",
+      "draftRef": "Draft §7, pp. 13–14",
+
+      "overview": {
+        "paragraphs": [
+          "This section is based on a recent senior's first-hand experience of Product Management campus recruitment.",
+          "Product profiles on campus span management, strategy and analytics, and the actual work depends heavily on the employer's industry."
+        ],
+        "keyPoints": [
+          "Some product recruiters (e.g. Media.net) skip resume shortlisting and use a strict 7.5+ CPI cutoff for the online test.",
+          "Club work from the first year builds product, analytics and consulting foundations.",
+          "Communication and public speaking show confidence in front of panels."
+        ]
+      },
+
+      "timeline": [
+        { "stage": "Pre-placement talk", "when": "First week of November (7th semester)", "detail": "Eligibility verified; no resume shortlist, so access to the online test depends on the 7.5+ CPI cutoff." },
+        { "stage": "Online assessment", "when": "About 10 days after the PPT", "detail": "Guesstimates, product design, RCA and case-study style problems." },
+        { "stage": "Shortlist released", "when": "About 2 weeks after the online test", "detail": "More than 50 candidates on the combined shortlist and waitlist; waitlisted candidates can move into active interviews." },
+        { "stage": "Round 1 (offline)", "when": "Day 1 drive, 1 December", "detail": "Projects, past internships, guesstimates, product design and root-cause analysis. Only 20–30% advance." },
+        { "stage": "Round 2 (online)", "when": "Day 1", "detail": "Deep project discussion plus a live business case study." }
+      ],
+
+      "eligibility": {
+        "general": [
+          "CPI ≥ 7.5 to sit for the online assessment (Media.net).",
+          "No initial resume shortlisting for that process."
+        ],
+        "btech": null,
+        "mtech": null,
+        "phd": null
+      },
+
+      "skills": [
+        { "name": "Guesstimates", "detail": "Structured logic, stated assumptions and sanity checks, communicated step by step." },
+        { "name": "Product design", "detail": "Designing for user needs in scenario questions." },
+        { "name": "Root-cause analysis (RCA)", "detail": "Tested in the online assessment and Round 1." },
+        { "name": "Case studies", "detail": "Live business case in Round 2." },
+        { "name": "Project depth", "detail": "Explain design decisions, real-world utility and your own contribution." },
+        { "name": "Communication & public speaking", "detail": "Leading teams and presenting to audiences of up to 100 people builds visible confidence." }
+      ],
+
+      "roadmap": [
+        { "stage": "y1-2", "title": "Join the right clubs early", "actions": ["Join and actively contribute to the Consulting and Analytics Club from the 1st year."], "outcome": "Foundations in product management, analytics and consulting frameworks." },
+        { "stage": "ongoing", "title": "Build communication and leadership", "actions": ["Take roles where you guide teams and present to large audiences."], "outcome": "Visible confidence in front of panels." },
+        { "stage": "ongoing", "title": "Keep your CPI above 7.5", "actions": ["Protect your CPI; some product tests are gated purely on it."], "outcome": "You get to sit the online assessment at all." },
+        { "stage": "nov", "title": "PPT and online assessment", "actions": ["Attend PPTs in the first week of November.", "Practise guesstimates, product design, RCA and case studies for the test about 10 days later.", "Research each company's business model."], "outcome": "A place on the Day 1 shortlist." },
+        { "stage": "dec-1", "title": "Day 1 interviews", "actions": ["Know every project on your resume in depth, including design decisions and your own contribution.", "Think out loud with clear assumptions and sanity checks."], "outcome": "Clearing Round 1 (20–30% do) and the live case in Round 2." }
+      ],
+
+      "resources": null,
+
+      "practical": [
+        { "title": "Consulting and Analytics Club", "detail": "Active contribution from the 1st year builds product, analytics and consulting foundations." },
+        { "title": "Projects that hold up to probing", "detail": "In one Round 2, the interviewer singled out a project on an AI agentic workflow and asked about design decisions, real-world use and individual contribution." },
+        { "title": "Leadership and presenting", "detail": "Guiding teams and presenting to audiences of up to 100 people." }
+      ],
+
+      "myths": [
+        { "myth": "A strong resume is what gets you into the product test.", "reality": "Some recruiters (e.g. Media.net) skip resume shortlisting entirely and admit candidates to the online test on a strict 7.5+ CPI cutoff." },
+        { "myth": "Every PM role is classic consumer product management.", "reality": "Work varies by industry. At an ad-tech company like Media.net, it centres on advertising algorithms, platform mechanics and publisher tools." },
+        { "myth": "Making the shortlist means you are nearly through.", "reality": "Over 50 candidates can be on the shortlist and waitlist, and only 20–30% of Round 1 candidates reach Round 2." }
+      ],
+
+      "advice": [
+        { "quote": "Join the Consulting and Analytics Club from the 1st year and contribute actively.", "attribution": { "role": "Placed senior, Product Management campus recruitment", "degree": null } },
+        { "quote": "Research the company's business model beforehand so your expectations are realistic and you can talk to interviewers in their terms.", "attribution": { "role": "Placed senior, Product Management campus recruitment", "degree": null } },
+        { "quote": "In guesstimates, interviewers look at how you frame assumptions and sanity-check, not just the final number.", "attribution": { "role": "Placed senior, Product Management campus recruitment", "degree": null } }
+      ],
+
+      "salaries": {
+        "roles": [
+          { "role": "Associate Product Manager (APM)", "detail": "Media.net" },
+          { "role": "Product Analyst", "detail": "Media.net" },
+          { "role": "Product Business Associate", "detail": "Media.net" },
+          { "role": "Product Management roles / product profiles", "detail": "Zomato, Shadowfax, Hylabs" }
+        ],
+        "compensation": [
+          { "company": "Media.net", "figure": "15–20 LPA", "note": null },
+          { "company": "Zomato", "figure": "15–20 LPA", "note": null },
+          { "company": "Shadowfax", "figure": "15–20 LPA", "note": null },
+          { "company": "Hylabs", "figure": "15–20 LPA", "note": null }
+        ],
+        "typicalRange": "15–20 LPA across the four companies listed by the senior."
+      },
+
+      "companies": [
+        {
+          "name": "Media.net",
+          "roles": ["Associate Product Manager", "Product Analyst", "Product Business Associate"],
+          "cutoff": "CPI ≥ 7.5",
+          "interviewFocus": ["Online assessment", "Guesstimates", "Product design", "Root-cause analysis", "Case studies"],
+          "iitgHistory": "Recruited on campus for product roles in the senior's season (Day 1).",
+          "degreeConstraints": null,
+          "notes": "Ad-tech company: work centres on advertising algorithms, platform mechanics and publisher tools. 15–20 LPA."
+        },
+        {
+          "name": "Zomato",
+          "roles": ["Product Management roles"],
+          "cutoff": null,
+          "interviewFocus": ["Product problem solving", "User dynamics"],
+          "iitgHistory": "Listed among companies visiting campus for product roles.",
+          "degreeConstraints": null,
+          "notes": "15–20 LPA."
+        },
+        {
+          "name": "Shadowfax",
+          "roles": ["Product profiles"],
+          "cutoff": null,
+          "interviewFocus": ["Operations analytics", "Product strategy"],
+          "iitgHistory": "Listed among companies visiting campus for product roles.",
+          "degreeConstraints": null,
+          "notes": "15–20 LPA."
+        },
+        {
+          "name": "Hylabs",
+          "roles": ["Product profiles"],
+          "cutoff": null,
+          "interviewFocus": ["Technical product evaluation"],
+          "iitgHistory": "Listed among companies visiting campus for product roles.",
+          "degreeConstraints": null,
+          "notes": "15–20 LPA."
+        }
+      ],
+
+      "market": [
+        { "title": "Highly selective", "detail": "Only 20–30% of Round 1 candidates advance to Round 2." },
+        { "title": "Industry shapes the role", "detail": "Responsibilities differ significantly by the employer's sector, so research each company's business model first." }
+      ],
+
+      "interviewQuestions": [
+        { "q": "Estimate the total number of two-wheelers used in your home city.", "round": "Round 1 (offline)", "topic": "Guesstimate" },
+        { "q": "Walk through a resume project (an AI agentic-workflow project in the senior's case): design decisions, real-world utility and your individual contribution.", "round": "Round 2 (online)", "topic": "Resume deep-dive" },
+        { "q": "Live business case study.", "round": "Round 2 (online)", "topic": "Case" }
+      ],
+
+      "selfCheck": null,
+      "certifications": null
+    }
+  ],
+
+  "alumni": [
+    { "domain": "civil-core", "degree": null, "graduationYear": null, "contact": "Provided in PDF annexure", "proofNote": null },
+    { "domain": "product-management", "degree": null, "graduationYear": null, "contact": "Provided in PDF annexure", "proofNote": null }
+  ]
+}
