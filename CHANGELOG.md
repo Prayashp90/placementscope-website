@@ -33,7 +33,7 @@ Fixes applied silently on the site, relative to `content/Placement_Scope_Draft_1
 ## Product Management (Draft §7)
 - The flattened four-company table rebuilt as separate rows (Media.net, Zomato, Shadowfax, Hylabs), matching the column order.
 - The senior's name removed; advice attributed by role only.
-- The guesstimate "two-wheelers in your home city of Surat" generalised to "your home city" to avoid identifying the senior.
+- The guesstimate naming the senior's home city generalised to "your home city" to avoid identifying the senior.
 - "CPI 7.5 cutoff" (missing ≥ in extraction) → "CPI ≥ 7.5".
 
 ## Consulting, AI/ML, Trading (Draft §8–10)

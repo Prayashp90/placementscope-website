@@ -19,7 +19,7 @@ No `npm install` is needed.
 ## Project layout
 
 ```
-content/               Source PDFs (guide draft and problem statement). Not published.
+content/               Source PDFs (local only, gitignored: the draft names seniors)
 src/data/domains.json  ALL site content: domains, quiz rules, alumni rows, content gaps
 src/assets/            styles.css and app.js (copied to dist/assets)
 public/                Copied as-is to the site root (favicon, guide PDF)
